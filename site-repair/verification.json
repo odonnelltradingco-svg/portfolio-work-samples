@@ -1,0 +1,104 @@
+{
+  "successful_requests": 18,
+  "prefixes": [
+    "/",
+    "/client-preview/"
+  ],
+  "incorrect_case_status": 404,
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/details.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/mark.svg",
+      "status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/mark.svg",
+      "status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/details.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/assets/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/details.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/assets/mark.svg",
+      "status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/client-preview/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/assets/site.css",
+      "status": 200,
+      "content_type": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/index.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/client-preview/assets/mark.svg",
+      "status": 200,
+      "content_type": "image/svg+xml"
+    },
+    {
+      "path": "/client-preview/details.html",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "regression_tests_passed": 5,
+  "original_demonstration": true,
+  "browser_testing": false,
+  "customer_host_tested": false
+}

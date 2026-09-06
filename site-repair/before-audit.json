@@ -1,0 +1,96 @@
+{
+  "html_files": 2,
+  "references": 8,
+  "ok": 5,
+  "not_checked": 0,
+  "needs_review": 3,
+  "status_counts": {
+    "case_mismatch": 1,
+    "local_file": 1,
+    "missing": 1,
+    "ok": 5
+  },
+  "results": [
+    {
+      "document": "details.html",
+      "line": 7,
+      "tag": "link",
+      "attribute": "href",
+      "url": "assets/site.css",
+      "status": "ok",
+      "target": "assets/site.css",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 10,
+      "tag": "a",
+      "attribute": "href",
+      "url": "#delivery",
+      "status": "ok",
+      "target": "details.html",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 11,
+      "tag": "img",
+      "attribute": "src",
+      "url": "assets/mark.svg",
+      "status": "ok",
+      "target": "assets/mark.svg",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 17,
+      "tag": "a",
+      "attribute": "href",
+      "url": "index.html#summary",
+      "status": "ok",
+      "target": "index.html",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 7,
+      "tag": "link",
+      "attribute": "href",
+      "url": "Assets/site.css",
+      "status": "case_mismatch",
+      "target": "Assets/site.css",
+      "detail": "Actual filename: assets/site.css"
+    },
+    {
+      "document": "index.html",
+      "line": 10,
+      "tag": "a",
+      "attribute": "href",
+      "url": "#summary",
+      "status": "ok",
+      "target": "index.html",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 11,
+      "tag": "img",
+      "attribute": "src",
+      "url": "file:///C:/sample/mark.svg",
+      "status": "local_file",
+      "target": null,
+      "detail": "Points to a computer file, not an uploaded website asset."
+    },
+    {
+      "document": "index.html",
+      "line": 19,
+      "tag": "a",
+      "attribute": "href",
+      "url": "details.htm#delivery",
+      "status": "missing",
+      "target": "details.htm",
+      "detail": "Target is not included in this website folder."
+    }
+  ],
+  "scope": "HTML href/src references and HTML id fragments only. Case-sensitive filenames. No CSS imports, srcset, runtime JavaScript, forms, server routes, external requests or browser rendering checks."
+}

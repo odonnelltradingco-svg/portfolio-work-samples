@@ -1,0 +1,11 @@
+record_number,order_id,ordered_at,channel,status,quantity,unit_price,shipping_days,reasons
+3,,2026-08-01,Direct,pending,1,12.50,,invalid_order_id
+18,F-0018,2026-02-30,Direct,paid,5,12.50,2.8,invalid_date
+29,F-0029,2026-08-04,Marketplace,paid,-1,19.95,5.1,invalid_quantity
+40,F-0040,2026-08-05,Marketplace, PAID ,1,unknown,4.4,invalid_unit_price
+51,F-0051,2026-08-07,Direct,settled,5,29.00,2.2,invalid_status
+62,F-0062,2026-08-08,Direct,paid,2,29.00,-2,invalid_shipping_days
+73,F-0073,2026-08-10,Direct,paid,,19.95,3.2,invalid_quantity
+241,F-0006,2026-08-01,Direct,paid,2,19.95,2.9,duplicate_order_id
+242,F-0021,2026-08-03,Direct,paid,1,49.50,4.4,duplicate_order_id
+243,F-0036,2026-08-05,Marketplace,pending,4,49.50,,duplicate_order_id

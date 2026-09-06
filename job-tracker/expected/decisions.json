@@ -1,0 +1,519 @@
+{
+  "source_records": 18,
+  "counts": {
+    "Active": 10,
+    "Archive": 4,
+    "Review": 4
+  },
+  "rows": [
+    {
+      "source_record": 1,
+      "original": {
+        "job_id": "J001",
+        "job_title": "Landing page cleanup",
+        "client": "Harbor Supply",
+        "posting_url": "https://example.com/jobs/j001",
+        "status": "Saved",
+        "posted_date": "2026-09-04",
+        "applied_date": "",
+        "next_action_date": "2026-09-06",
+        "next_action": "Review scope and choose relevant sample"
+      },
+      "clean": {
+        "job_id": "J001",
+        "job_title": "Landing page cleanup",
+        "client": "Harbor Supply",
+        "posting_url": "https://example.com/jobs/j001",
+        "status": "Saved",
+        "posted_date": "2026-09-04",
+        "applied_date": "",
+        "next_action_date": "2026-09-06",
+        "next_action": "Review scope and choose relevant sample"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 2,
+      "original": {
+        "job_id": "J002",
+        "job_title": "Invoice export repair",
+        "client": "Pine Workshop",
+        "posting_url": "https://example.com/jobs/j002",
+        "status": "Applied",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a client response"
+      },
+      "clean": {
+        "job_id": "J002",
+        "job_title": "Invoice export repair",
+        "client": "Pine Workshop",
+        "posting_url": "https://example.com/jobs/j002",
+        "status": "Applied",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a client response"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 3,
+      "original": {
+        "job_id": "J003",
+        "job_title": "Booking form update",
+        "client": "Northline Studio",
+        "posting_url": "https://example.com/jobs/j003",
+        "status": "Submitted",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-07",
+        "next_action": "Prepare questions about existing form"
+      },
+      "clean": {
+        "job_id": "J003",
+        "job_title": "Booking form update",
+        "client": "Northline Studio",
+        "posting_url": "https://example.com/jobs/j003",
+        "status": "Applied",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-07",
+        "next_action": "Prepare questions about existing form"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 4,
+      "original": {
+        "job_id": "J004",
+        "job_title": "Product table cleanup",
+        "client": "Juniper Goods",
+        "posting_url": "https://example.com/jobs/j004",
+        "status": "Interview",
+        "posted_date": "2026-08-29",
+        "applied_date": "2026-08-30",
+        "next_action_date": "2026-09-06",
+        "next_action": "Clarify sample file and acceptance checks"
+      },
+      "clean": {
+        "job_id": "J004",
+        "job_title": "Product table cleanup",
+        "client": "Juniper Goods",
+        "posting_url": "https://example.com/jobs/j004",
+        "status": "Interviewing",
+        "posted_date": "2026-08-29",
+        "applied_date": "2026-08-30",
+        "next_action_date": "2026-09-06",
+        "next_action": "Clarify sample file and acceptance checks"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 5,
+      "original": {
+        "job_id": "J005",
+        "job_title": "Mobile layout polish",
+        "client": "Orchard Services",
+        "posting_url": "https://example.com/jobs/j005",
+        "status": "Offered",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-01",
+        "next_action_date": "2026-09-05",
+        "next_action": "Review proposed scope and milestone"
+      },
+      "clean": {
+        "job_id": "J005",
+        "job_title": "Mobile layout polish",
+        "client": "Orchard Services",
+        "posting_url": "https://example.com/jobs/j005",
+        "status": "Offer",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-01",
+        "next_action_date": "2026-09-05",
+        "next_action": "Review proposed scope and milestone"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 6,
+      "original": {
+        "job_id": "J006",
+        "job_title": "FAQ page build",
+        "client": "Canvas Works",
+        "posting_url": "https://example.com/jobs/j006",
+        "status": "Open",
+        "posted_date": "2026-05-10",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Check whether the posting is still relevant"
+      },
+      "clean": {
+        "job_id": "J006",
+        "job_title": "FAQ page build",
+        "client": "Canvas Works",
+        "posting_url": "https://example.com/jobs/j006",
+        "status": "Saved",
+        "posted_date": "2026-05-10",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Check whether the posting is still relevant"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 7,
+      "original": {
+        "job_id": "J007",
+        "job_title": "Report filter update",
+        "client": "Cedar Supply",
+        "posting_url": "https://example.com/jobs/j007",
+        "status": "Saved",
+        "posted_date": "2026-09-03",
+        "applied_date": "",
+        "next_action_date": "2026-09-10",
+        "next_action": "Review the filter requirements"
+      },
+      "clean": {
+        "job_id": "J007",
+        "job_title": "Report filter update",
+        "client": "Cedar Supply",
+        "posting_url": "https://example.com/jobs/j007",
+        "status": "Saved",
+        "posted_date": "2026-09-03",
+        "applied_date": "",
+        "next_action_date": "2026-09-10",
+        "next_action": "Review the filter requirements"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 8,
+      "original": {
+        "job_id": "J008",
+        "job_title": "Contact page repair",
+        "client": "Maple Office",
+        "posting_url": "https://example.com/jobs/j008",
+        "status": "Applied",
+        "posted_date": "2026-09-04",
+        "applied_date": "2026-09-05",
+        "next_action_date": "",
+        "next_action": "Wait for a reply"
+      },
+      "clean": {
+        "job_id": "J008",
+        "job_title": "Contact page repair",
+        "client": "Maple Office",
+        "posting_url": "https://example.com/jobs/j008",
+        "status": "Applied",
+        "posted_date": "2026-09-04",
+        "applied_date": "2026-09-05",
+        "next_action_date": "",
+        "next_action": "Wait for a reply"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 9,
+      "original": {
+        "job_id": "J009",
+        "job_title": "CSV import review",
+        "client": "Willow Shop",
+        "posting_url": "https://example.com/jobs/j009",
+        "status": "Interviewing",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-09",
+        "next_action": "Confirm the required columns"
+      },
+      "clean": {
+        "job_id": "J009",
+        "job_title": "CSV import review",
+        "client": "Willow Shop",
+        "posting_url": "https://example.com/jobs/j009",
+        "status": "Interviewing",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-09",
+        "next_action": "Confirm the required columns"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 10,
+      "original": {
+        "job_id": "J010",
+        "job_title": "Service page refresh",
+        "client": "Field House",
+        "posting_url": "https://example.com/jobs/j010",
+        "status": "Applied",
+        "posted_date": "2026-09-04",
+        "applied_date": "2026-09-05",
+        "next_action_date": "2026-09-11",
+        "next_action": "Check for a client response"
+      },
+      "clean": {
+        "job_id": "J010",
+        "job_title": "Service page refresh",
+        "client": "Field House",
+        "posting_url": "https://example.com/jobs/j010",
+        "status": "Applied",
+        "posted_date": "2026-09-04",
+        "applied_date": "2026-09-05",
+        "next_action_date": "2026-09-11",
+        "next_action": "Check for a client response"
+      },
+      "issues": [],
+      "bucket": "Active",
+      "reason": "Recognized active status; no identity conflict"
+    },
+    {
+      "source_record": 11,
+      "original": {
+        "job_id": " J002 ",
+        "job_title": "Invoice export repair",
+        "client": "Pine Workshop",
+        "posting_url": "HTTPS://EXAMPLE.COM/jobs/j002",
+        "status": " applied ",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a client response"
+      },
+      "clean": {
+        "job_id": "J002",
+        "job_title": "Invoice export repair",
+        "client": "Pine Workshop",
+        "posting_url": "https://example.com/jobs/j002",
+        "status": "Applied",
+        "posted_date": "2026-09-02",
+        "applied_date": "2026-09-03",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a client response"
+      },
+      "issues": [],
+      "bucket": "Archive",
+      "reason": "Exact normalized duplicate of source record 2"
+    },
+    {
+      "source_record": 12,
+      "original": {
+        "job_id": "J003",
+        "job_title": "Booking form update",
+        "client": "Northline Studio",
+        "posting_url": "https://example.com/jobs/j003",
+        "status": "Applied",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-07",
+        "next_action": "Prepare questions about existing form"
+      },
+      "clean": {
+        "job_id": "J003",
+        "job_title": "Booking form update",
+        "client": "Northline Studio",
+        "posting_url": "https://example.com/jobs/j003",
+        "status": "Applied",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-07",
+        "next_action": "Prepare questions about existing form"
+      },
+      "issues": [],
+      "bucket": "Archive",
+      "reason": "Exact normalized duplicate of source record 3"
+    },
+    {
+      "source_record": 13,
+      "original": {
+        "job_id": "J011",
+        "job_title": "Seasonal page update",
+        "client": "Birch Market",
+        "posting_url": "https://example.com/jobs/j011",
+        "status": "Closed",
+        "posted_date": "2026-07-03",
+        "applied_date": "2026-07-05",
+        "next_action_date": "",
+        "next_action": "Posting marked closed in source"
+      },
+      "clean": {
+        "job_id": "J011",
+        "job_title": "Seasonal page update",
+        "client": "Birch Market",
+        "posting_url": "https://example.com/jobs/j011",
+        "status": "Closed",
+        "posted_date": "2026-07-03",
+        "applied_date": "2026-07-05",
+        "next_action_date": "",
+        "next_action": "Posting marked closed in source"
+      },
+      "issues": [],
+      "bucket": "Archive",
+      "reason": "Source explicitly marked closed"
+    },
+    {
+      "source_record": 14,
+      "original": {
+        "job_id": "J012",
+        "job_title": "Archived menu edit",
+        "client": "West Quay",
+        "posting_url": "https://example.com/jobs/j012",
+        "status": "Expired",
+        "posted_date": "2026-07-09",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Posting marked expired in source"
+      },
+      "clean": {
+        "job_id": "J012",
+        "job_title": "Archived menu edit",
+        "client": "West Quay",
+        "posting_url": "https://example.com/jobs/j012",
+        "status": "Expired",
+        "posted_date": "2026-07-09",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Posting marked expired in source"
+      },
+      "issues": [],
+      "bucket": "Archive",
+      "reason": "Source explicitly marked expired"
+    },
+    {
+      "source_record": 15,
+      "original": {
+        "job_id": "J013",
+        "job_title": "Dashboard update",
+        "client": "Meadow Supply",
+        "posting_url": "https://example.com/jobs/j013",
+        "status": "pending?",
+        "posted_date": "2026-09-03",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Confirm whether saved or applied"
+      },
+      "clean": {
+        "job_id": "J013",
+        "job_title": "Dashboard update",
+        "client": "Meadow Supply",
+        "posting_url": "https://example.com/jobs/j013",
+        "status": "pending?",
+        "posted_date": "2026-09-03",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Confirm whether saved or applied"
+      },
+      "issues": [
+        "Unrecognized status"
+      ],
+      "bucket": "Review",
+      "reason": "Unrecognized status"
+    },
+    {
+      "source_record": 16,
+      "original": {
+        "job_id": "",
+        "job_title": "Price list review",
+        "client": "Elm Workshop",
+        "posting_url": "",
+        "status": "Saved",
+        "posted_date": "2026-09-04",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Find the original job ID or posting URL"
+      },
+      "clean": {
+        "job_id": "",
+        "job_title": "Price list review",
+        "client": "Elm Workshop",
+        "posting_url": "",
+        "status": "Saved",
+        "posted_date": "2026-09-04",
+        "applied_date": "",
+        "next_action_date": "",
+        "next_action": "Find the original job ID or posting URL"
+      },
+      "issues": [
+        "Missing job ID and posting URL"
+      ],
+      "bucket": "Review",
+      "reason": "Missing job ID and posting URL"
+    },
+    {
+      "source_record": 17,
+      "original": {
+        "job_id": "J014",
+        "job_title": "Quote widget fix",
+        "client": "Stone Studio",
+        "posting_url": "https://example.com/jobs/j014",
+        "status": "Applied",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a response"
+      },
+      "clean": {
+        "job_id": "J014",
+        "job_title": "Quote widget fix",
+        "client": "Stone Studio",
+        "posting_url": "https://example.com/jobs/j014",
+        "status": "Applied",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-08",
+        "next_action": "Check for a response"
+      },
+      "issues": [],
+      "bucket": "Review",
+      "reason": "Conflicting records share a job ID or posting URL; confirm the correct details"
+    },
+    {
+      "source_record": 18,
+      "original": {
+        "job_id": "J014",
+        "job_title": "Quote widget fix",
+        "client": "Stone Studio",
+        "posting_url": "https://example.com/jobs/j014",
+        "status": "Interviewing",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-08",
+        "next_action": "Confirm whether an interview began"
+      },
+      "clean": {
+        "job_id": "J014",
+        "job_title": "Quote widget fix",
+        "client": "Stone Studio",
+        "posting_url": "https://example.com/jobs/j014",
+        "status": "Interviewing",
+        "posted_date": "2026-09-01",
+        "applied_date": "2026-09-02",
+        "next_action_date": "2026-09-08",
+        "next_action": "Confirm whether an interview began"
+      },
+      "issues": [],
+      "bucket": "Review",
+      "reason": "Conflicting records share a job ID or posting URL; confirm the correct details"
+    }
+  ],
+  "source_sha256": "acc6fa493a4e06cd7c78cbab5c3b30754acff17deb45b870bd5ff303d4cbeb69"
+}

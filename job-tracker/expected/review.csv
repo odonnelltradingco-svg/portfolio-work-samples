@@ -1,0 +1,5 @@
+source_record,job_id,job_title,client,posting_url,status,posted_date,applied_date,next_action_date,next_action,reason
+15,J013,Dashboard update,Meadow Supply,https://example.com/jobs/j013,pending?,2026-09-03,,,Confirm whether saved or applied,Unrecognized status
+16,,Price list review,Elm Workshop,,Saved,2026-09-04,,,Find the original job ID or posting URL,Missing job ID and posting URL
+17,J014,Quote widget fix,Stone Studio,https://example.com/jobs/j014,Applied,2026-09-01,2026-09-02,2026-09-08,Check for a response,Conflicting records share a job ID or posting URL; confirm the correct details
+18,J014,Quote widget fix,Stone Studio,https://example.com/jobs/j014,Interviewing,2026-09-01,2026-09-02,2026-09-08,Confirm whether an interview began,Conflicting records share a job ID or posting URL; confirm the correct details

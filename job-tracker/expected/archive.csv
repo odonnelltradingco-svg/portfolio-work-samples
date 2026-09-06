@@ -1,0 +1,5 @@
+source_record,job_id,job_title,client,posting_url,status,posted_date,applied_date,next_action_date,next_action,reason
+11,J002,Invoice export repair,Pine Workshop,https://example.com/jobs/j002,Applied,2026-09-02,2026-09-03,2026-09-08,Check for a client response,Exact normalized duplicate of source record 2
+12,J003,Booking form update,Northline Studio,https://example.com/jobs/j003,Applied,2026-09-01,2026-09-02,2026-09-07,Prepare questions about existing form,Exact normalized duplicate of source record 3
+13,J011,Seasonal page update,Birch Market,https://example.com/jobs/j011,Closed,2026-07-03,2026-07-05,,Posting marked closed in source,Source explicitly marked closed
+14,J012,Archived menu edit,West Quay,https://example.com/jobs/j012,Expired,2026-07-09,,,Posting marked expired in source,Source explicitly marked expired

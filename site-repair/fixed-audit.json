@@ -1,0 +1,93 @@
+{
+  "html_files": 2,
+  "references": 8,
+  "ok": 8,
+  "not_checked": 0,
+  "needs_review": 0,
+  "status_counts": {
+    "ok": 8
+  },
+  "results": [
+    {
+      "document": "details.html",
+      "line": 7,
+      "tag": "link",
+      "attribute": "href",
+      "url": "assets/site.css",
+      "status": "ok",
+      "target": "assets/site.css",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 10,
+      "tag": "a",
+      "attribute": "href",
+      "url": "#delivery",
+      "status": "ok",
+      "target": "details.html",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 11,
+      "tag": "img",
+      "attribute": "src",
+      "url": "assets/mark.svg",
+      "status": "ok",
+      "target": "assets/mark.svg",
+      "detail": ""
+    },
+    {
+      "document": "details.html",
+      "line": 17,
+      "tag": "a",
+      "attribute": "href",
+      "url": "index.html#summary",
+      "status": "ok",
+      "target": "index.html",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 7,
+      "tag": "link",
+      "attribute": "href",
+      "url": "assets/site.css",
+      "status": "ok",
+      "target": "assets/site.css",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 10,
+      "tag": "a",
+      "attribute": "href",
+      "url": "#summary",
+      "status": "ok",
+      "target": "index.html",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 11,
+      "tag": "img",
+      "attribute": "src",
+      "url": "assets/mark.svg",
+      "status": "ok",
+      "target": "assets/mark.svg",
+      "detail": ""
+    },
+    {
+      "document": "index.html",
+      "line": 19,
+      "tag": "a",
+      "attribute": "href",
+      "url": "details.html#delivery",
+      "status": "ok",
+      "target": "details.html",
+      "detail": ""
+    }
+  ],
+  "scope": "HTML href/src references and HTML id fragments only. Case-sensitive filenames. No CSS imports, srcset, runtime JavaScript, forms, server routes, external requests or browser rendering checks."
+}

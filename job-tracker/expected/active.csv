@@ -1,0 +1,11 @@
+source_record,job_id,job_title,client,posting_url,status,posted_date,applied_date,next_action_date,next_action,reason
+1,J001,Landing page cleanup,Harbor Supply,https://example.com/jobs/j001,Saved,2026-09-04,,2026-09-06,Review scope and choose relevant sample,Recognized active status; no identity conflict
+2,J002,Invoice export repair,Pine Workshop,https://example.com/jobs/j002,Applied,2026-09-02,2026-09-03,2026-09-08,Check for a client response,Recognized active status; no identity conflict
+3,J003,Booking form update,Northline Studio,https://example.com/jobs/j003,Applied,2026-09-01,2026-09-02,2026-09-07,Prepare questions about existing form,Recognized active status; no identity conflict
+4,J004,Product table cleanup,Juniper Goods,https://example.com/jobs/j004,Interviewing,2026-08-29,2026-08-30,2026-09-06,Clarify sample file and acceptance checks,Recognized active status; no identity conflict
+5,J005,Mobile layout polish,Orchard Services,https://example.com/jobs/j005,Offer,2026-09-01,2026-09-01,2026-09-05,Review proposed scope and milestone,Recognized active status; no identity conflict
+6,J006,FAQ page build,Canvas Works,https://example.com/jobs/j006,Saved,2026-05-10,,,Check whether the posting is still relevant,Recognized active status; no identity conflict
+7,J007,Report filter update,Cedar Supply,https://example.com/jobs/j007,Saved,2026-09-03,,2026-09-10,Review the filter requirements,Recognized active status; no identity conflict
+8,J008,Contact page repair,Maple Office,https://example.com/jobs/j008,Applied,2026-09-04,2026-09-05,,Wait for a reply,Recognized active status; no identity conflict
+9,J009,CSV import review,Willow Shop,https://example.com/jobs/j009,Interviewing,2026-09-02,2026-09-03,2026-09-09,Confirm the required columns,Recognized active status; no identity conflict
+10,J010,Service page refresh,Field House,https://example.com/jobs/j010,Applied,2026-09-04,2026-09-05,2026-09-11,Check for a client response,Recognized active status; no identity conflict

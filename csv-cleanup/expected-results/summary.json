@@ -1,0 +1,24 @@
+{
+  "currency": "USD",
+  "input_records": 12,
+  "accepted_records": 6,
+  "rejected_records": 6,
+  "accepted_records_with_whitespace_or_case_cleanup": 1,
+  "status_counts": {
+    "paid": 4,
+    "pending": 1,
+    "refunded": 1
+  },
+  "order_value_by_status_usd": {
+    "paid": "89.75",
+    "pending": "19.95",
+    "refunded": "9.00"
+  },
+  "collected_revenue_usd": "89.75",
+  "notes": [
+    "Fictional portfolio data; this is not an accounting system.",
+    "Only accepted paid rows contribute to collected revenue.",
+    "Duplicate IDs are flagged even if the first occurrence is invalid.",
+    "Original values remain in the exceptions JSON; no values are imputed."
+  ]
+}

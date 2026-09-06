@@ -1,0 +1,4 @@
+status,orders,value_cents
+paid,180,3081765
+pending,35,385506
+refunded,18,210007

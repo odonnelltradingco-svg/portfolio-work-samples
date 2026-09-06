@@ -1,0 +1,39 @@
+{
+  "input_records": 243,
+  "accepted_records": 233,
+  "review_records": 10,
+  "paid_orders": 180,
+  "paid_value_cents": 3081765,
+  "median_paid_value_cents": 7980.0,
+  "mean_paid_value_cents": 17120.916666666668,
+  "largest_paid_order_cents": 999900,
+  "largest_paid_order_share": 0.3244569264690851,
+  "high_value_review_count": 18,
+  "upper_iqr_fence_cents": 30625.0,
+  "unknown_channel_orders": 13,
+  "paid_shipping_observations": 170,
+  "paid_shipping_missing": 10,
+  "status_counts": {
+    "paid": 180,
+    "pending": 35,
+    "refunded": 18
+  },
+  "status_value_cents": {
+    "paid": 3081765,
+    "pending": 385506,
+    "refunded": 210007
+  },
+  "notes": [
+    "Fictional, seeded demonstration; no customer data or business outcomes.",
+    "Paid order value is not profit, net cash flow, tax-adjusted revenue or accounting advice.",
+    "Pending and refunded records remain separate; no refund is subtracted a second time.",
+    "Missing shipping times are excluded only from shipping summaries; denominators are reported.",
+    "High-value flags prompt review; all valid paid records stay in the totals."
+  ],
+  "input_sha256": "eff088f95598a8b8debd99eb0e8159f326440db3efe5fd3be6ccfa275e966214",
+  "environment": {
+    "pandas": "3.0.1",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.1"
+  }
+}

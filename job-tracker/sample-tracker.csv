@@ -1,0 +1,19 @@
+job_id,job_title,client,posting_url,status,posted_date,applied_date,next_action_date,next_action
+J001,Landing page cleanup,Harbor Supply,https://example.com/jobs/j001,Saved,2026-09-04,,2026-09-06,Review scope and choose relevant sample
+J002,Invoice export repair,Pine Workshop,https://example.com/jobs/j002,Applied,2026-09-02,2026-09-03,2026-09-08,Check for a client response
+J003,Booking form update,Northline Studio,https://example.com/jobs/j003,Submitted,2026-09-01,2026-09-02,2026-09-07,Prepare questions about existing form
+J004,Product table cleanup,Juniper Goods,https://example.com/jobs/j004,Interview,2026-08-29,2026-08-30,2026-09-06,Clarify sample file and acceptance checks
+J005,Mobile layout polish,Orchard Services,https://example.com/jobs/j005,Offered,2026-09-01,2026-09-01,2026-09-05,Review proposed scope and milestone
+J006,FAQ page build,Canvas Works,https://example.com/jobs/j006,Open,2026-05-10,,,Check whether the posting is still relevant
+J007,Report filter update,Cedar Supply,https://example.com/jobs/j007,Saved,2026-09-03,,2026-09-10,Review the filter requirements
+J008,Contact page repair,Maple Office,https://example.com/jobs/j008,Applied,2026-09-04,2026-09-05,,Wait for a reply
+J009,CSV import review,Willow Shop,https://example.com/jobs/j009,Interviewing,2026-09-02,2026-09-03,2026-09-09,Confirm the required columns
+J010,Service page refresh,Field House,https://example.com/jobs/j010,Applied,2026-09-04,2026-09-05,2026-09-11,Check for a client response
+ J002 ,Invoice export repair,Pine Workshop,HTTPS://EXAMPLE.COM/jobs/j002, applied ,2026-09-02,2026-09-03,2026-09-08,Check for a client response
+J003,Booking form update,Northline Studio,https://example.com/jobs/j003,Applied,2026-09-01,2026-09-02,2026-09-07,Prepare questions about existing form
+J011,Seasonal page update,Birch Market,https://example.com/jobs/j011,Closed,2026-07-03,2026-07-05,,Posting marked closed in source
+J012,Archived menu edit,West Quay,https://example.com/jobs/j012,Expired,2026-07-09,,,Posting marked expired in source
+J013,Dashboard update,Meadow Supply,https://example.com/jobs/j013,pending?,2026-09-03,,,Confirm whether saved or applied
+,Price list review,Elm Workshop,,Saved,2026-09-04,,,Find the original job ID or posting URL
+J014,Quote widget fix,Stone Studio,https://example.com/jobs/j014,Applied,2026-09-01,2026-09-02,2026-09-08,Check for a response
+J014,Quote widget fix,Stone Studio,https://example.com/jobs/j014,Interviewing,2026-09-01,2026-09-02,2026-09-08,Confirm whether an interview began
