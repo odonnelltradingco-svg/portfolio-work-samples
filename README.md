@@ -1,5 +1,7 @@
 # Pierce O'Donnell · Selected work
 
+[![Verify work samples](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml/badge.svg)](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml)
+
 Small, inspectable examples of the work I deliver: careful data cleanup, useful spreadsheets, focused website repairs and clear analysis.
 
 [Live portfolio](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site) · [36-second walkthrough](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/#walkthrough) · [Studio](https://odonnellos.online/studio) · [Hire on Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be)
@@ -23,6 +25,8 @@ These are original portfolio demonstrations. All sample companies, orders and jo
 - [Try the interactive Orderly CSV demo](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/data-cleanup).
 
 ## Run the checks
+
+[Open the automatic verification runs](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) to inspect the exact commit, environment and test logs. The workflow checks the 19 standard-library tests on Python 3.10, all 24 tests on Python 3.12, and a full notebook execution in a fresh kernel on Ubuntu. It also checks that running the examples leaves the supplied files unchanged. The badge shows the current workflow status, not a claim about a client system.
 
 Download or clone this repository, then run this command from its top folder with Python 3.10 or newer:
 

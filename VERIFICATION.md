@@ -1,5 +1,13 @@
 # Verification record
 
+## Automatic checks
+
+The [public workflow](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) runs on each push to `main` and each pull request. Open a completed run for its exact commit, result and logs. Python 3.10 runs the 19 standard-library tests; Python 3.12 runs all 24 tests and re-executes the complete EDA notebook in a fresh kernel. Both jobs check that tracked sample files remain unchanged. The notebook's newly generated outputs stay in the temporary runner workspace.
+
+This adds a Linux environment check to the local verification below. It does not test Excel's desktop interface or the hosted browser demos. No deployment credentials are used; third-party actions are pinned to exact commits and repository access is read-only.
+
+## Recorded local verification
+
 Verified September 6, 2026 with Python 3.12.14 on Windows. This records the supplied demonstration, not testing of a client system.
 
 | Suite | Tests | Result |
