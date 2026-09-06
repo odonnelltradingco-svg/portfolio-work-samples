@@ -56,11 +56,11 @@ const examples = [
     tone: 'scope',
     image: '/work/scope-studio.jpg',
     features: [
-      'Three steps with editable choices',
+      'Three-step flow and optional local drafts',
       'Field-level validation and sample details',
       'Itemized estimate and a complete brief export',
     ],
-    try: 'Choose a scope, use the sample details and preview the finished brief.',
+    try: 'Save a sample draft, refresh, then restore it and finish the outline.',
     cta: 'Build a sample brief',
   },
 ];

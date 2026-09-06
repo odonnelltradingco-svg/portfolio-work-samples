@@ -84,7 +84,7 @@ jobs:
           run_install: false
       - name: Install exact dependency versions
         run: pnpm install --frozen-lockfile --ignore-scripts
-      - name: Run 22 interface-logic tests
+      - name: Run 28 interface-logic tests
         run: pnpm test
       - name: Check TypeScript
         run: pnpm typecheck

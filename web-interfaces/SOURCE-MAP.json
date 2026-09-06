@@ -69,10 +69,10 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "a9ad28aa7ac53b5fc2f9f3b18a6e87afd28250d04aaa78bff63aaebe1326f66a",
-      "bytes": 17578,
-      "origin_version": 19,
-      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
+      "origin_sha256": "3e3efdcd79c1403db3047d9298e7e50ed3a5c3393fb4ee57989f4f13ab751cbd",
+      "bytes": 17585,
+      "origin_version": 20,
+      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
     },
     {
       "path": "app/portfolio.css",
@@ -86,13 +86,24 @@
     },
     {
       "path": "app/project-quote/page.tsx",
-      "origin_sha256": "66270b281fa691c65c9a273b11dd195253e4aa111d0b5f86873ea5d98f8c1dd5",
-      "bytes": 22230
+      "origin_sha256": "2841debce3e1b98fe268f4c20f73ae7499caf1ec6ecb9138a5c5daab87005fd8",
+      "bytes": 27698,
+      "origin_version": 20,
+      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
     },
     {
       "path": "app/project-quote/project-quote.css",
-      "origin_sha256": "e6ef6a5e5ab7611826015f84d1ec99dfa7b6acb58c6d0f49a41a642780f793c6",
-      "bytes": 5925
+      "origin_sha256": "c37bfe16cef4d4a362752e2ecf47c51bc0fa3415caa5115d10a91829b5abb075",
+      "bytes": 6875,
+      "origin_version": 20,
+      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
+    },
+    {
+      "path": "components/demo-ribbon.css",
+      "origin_sha256": "74c3492bf5bd57a2094959e4da0f332ff9cb062069a7ed13db470defdb478958",
+      "bytes": 394,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "components/demo-shared.tsx",
@@ -179,6 +190,13 @@
       "bytes": 7058
     },
     {
+      "path": "lib/home-care-copy.ts",
+      "origin_sha256": "010e3185b9d66f94558ea47caffd59de77ac6793fe88451d5e976748fceae706",
+      "bytes": 13189,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    },
+    {
       "path": "lib/order-cleanup.ts",
       "origin_sha256": "408630f440a7d57bd15dc0328ce39ceafa594473f8fc86a9be933724e95bd9d5",
       "bytes": 8829
@@ -189,6 +207,13 @@
       "bytes": 619
     },
     {
+      "path": "lib/project-draft.ts",
+      "origin_sha256": "fda20511fb36652fee221647a4a2f19ccfc2ac9a224c9861cac983204e7855b1",
+      "bytes": 4539,
+      "origin_version": 20,
+      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
+    },
+    {
       "path": "lib/utils.ts",
       "origin_sha256": "9304a861c8673bee09e0f12de31773abbde503b02e59dfd74763ddec2e37cf05",
       "bytes": 169
@@ -197,6 +222,20 @@
       "path": "public/downloads/csv-cleanup-sample.zip",
       "origin_sha256": "92cc1b81cc9268e55a33a7b1fbc80de565ffc4cb55347922b061895ed5e0e99b",
       "bytes": 7890
+    },
+    {
+      "path": "public/downloads/csv-to-pdf-report.pdf",
+      "origin_sha256": "aefec2ae528f0890b63cd2e62e3855f1bb343a86ab0031c9fa489f9d9f72b4ad",
+      "bytes": 2966,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    },
+    {
+      "path": "public/downloads/csv-to-pdf-sample.zip",
+      "origin_sha256": "f53549fa18c1d999a30d82c54bd61c3be19b363b981965d9597729e6003534d5",
+      "bytes": 19250,
+      "origin_version": 19,
+      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
     },
     {
       "path": "public/downloads/fulfillment-eda.html",
@@ -339,6 +378,26 @@
       "bytes": 85145
     },
     {
+      "path": "samples/csv-cleanup/expected-results/cleaned-orders.csv",
+      "origin_sha256": "4d53d0f4b03c06db1dbad79c79b69048dbef03666239e1cbdb6f0e96049367fc",
+      "bytes": 398
+    },
+    {
+      "path": "samples/csv-cleanup/expected-results/exceptions.json",
+      "origin_sha256": "5b175d673914aadb3081b097bdf1ee34f4c1d803da8812a7003235edc22f04e4",
+      "bytes": 1396
+    },
+    {
+      "path": "samples/csv-cleanup/expected-results/summary.json",
+      "origin_sha256": "f77d4ced4446b42789ef71d47f35a0fc1959e4e5c4223d61b7ac403c8bb22dc4",
+      "bytes": 696
+    },
+    {
+      "path": "samples/csv-cleanup/sample-orders.csv",
+      "origin_sha256": "4abfc130636469dba3e7ed87e6c00959675cab7253478f09c542b03f0b4d8263",
+      "bytes": 568
+    },
+    {
       "path": "tests/clean-estimate.test.mjs",
       "origin_sha256": "a34af79d616bdb83c83fc350d1e0a4ad96a8d264efc84772116c04d387891d02",
       "bytes": 1767
@@ -354,52 +413,11 @@
       "bytes": 4125
     },
     {
-      "path": "samples/csv-cleanup/sample-orders.csv",
-      "origin_sha256": "4abfc130636469dba3e7ed87e6c00959675cab7253478f09c542b03f0b4d8263",
-      "bytes": 568
-    },
-    {
-      "path": "samples/csv-cleanup/expected-results/summary.json",
-      "origin_sha256": "f77d4ced4446b42789ef71d47f35a0fc1959e4e5c4223d61b7ac403c8bb22dc4",
-      "bytes": 696
-    },
-    {
-      "path": "samples/csv-cleanup/expected-results/exceptions.json",
-      "origin_sha256": "5b175d673914aadb3081b097bdf1ee34f4c1d803da8812a7003235edc22f04e4",
-      "bytes": 1396
-    },
-    {
-      "path": "samples/csv-cleanup/expected-results/cleaned-orders.csv",
-      "origin_sha256": "4d53d0f4b03c06db1dbad79c79b69048dbef03666239e1cbdb6f0e96049367fc",
-      "bytes": 398
-    },
-    {
-      "path": "lib/home-care-copy.ts",
-      "origin_sha256": "010e3185b9d66f94558ea47caffd59de77ac6793fe88451d5e976748fceae706",
-      "bytes": 13189,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
-    },
-    {
-      "path": "components/demo-ribbon.css",
-      "origin_sha256": "74c3492bf5bd57a2094959e4da0f332ff9cb062069a7ed13db470defdb478958",
-      "bytes": 394,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
-    },
-    {
-      "path": "public/downloads/csv-to-pdf-report.pdf",
-      "origin_sha256": "aefec2ae528f0890b63cd2e62e3855f1bb343a86ab0031c9fa489f9d9f72b4ad",
-      "bytes": 2966,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
-    },
-    {
-      "path": "public/downloads/csv-to-pdf-sample.zip",
-      "origin_sha256": "f53549fa18c1d999a30d82c54bd61c3be19b363b981965d9597729e6003534d5",
-      "bytes": 19250,
-      "origin_version": 19,
-      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
+      "path": "tests/project-draft.test.mjs",
+      "origin_sha256": "6feb2aa3c15df59d945b54cd00d9b84e3e37132e570f4e1992bd320765d1cabe",
+      "bytes": 5201,
+      "origin_version": 20,
+      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
     }
   ],
   "updates": [
@@ -427,6 +445,18 @@
         "public/downloads/csv-to-pdf-sample.zip"
       ],
       "change": "Nine-file CSV-to-PDF download with local folder processing, file history, repeat-run and failure handling; updated download description."
+    },
+    {
+      "site_version": 20,
+      "site_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9",
+      "files": [
+        "app/page.tsx",
+        "app/project-quote/page.tsx",
+        "app/project-quote/project-quote.css",
+        "lib/project-draft.ts",
+        "tests/project-draft.test.mjs"
+      ],
+      "change": "Scope Studio optional device-local temporary draft save, restore and forget, with validation, explicit errors and six behavior tests."
     }
   ]
 }

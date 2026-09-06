@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { SiteLink as Link } from '@/components/site-link';
 import {
   ArrowRight,
@@ -20,6 +20,15 @@ import { Progress } from '@/components/ui/progress';
 import { DemoRibbon, Choice } from '@/components/demo-shared';
 import { ExportPreview } from '@/components/export-preview';
 import { projectEstimate, money, validateProjectGoal } from '@/lib/demo-model';
+import {
+  draftMatches,
+  forgetProjectDraft,
+  readProjectDraft,
+  saveProjectDraft,
+  type DraftReadResult,
+  type ProjectDraft,
+  type SavedProjectDraft,
+} from '@/lib/project-draft';
 
 const featureOptions = [
   {
@@ -53,6 +62,10 @@ export default function ProjectQuote() {
   const [brief, setBrief] = useState('');
   const [showErrors, setShowErrors] = useState(false);
   const [complete, setComplete] = useState(false);
+  const [savedDraft, setSavedDraft] = useState<SavedProjectDraft | null>(null);
+  const [hasStoredDraft, setHasStoredDraft] = useState(false);
+  const [draftReady, setDraftReady] = useState(false);
+  const [draftMessage, setDraftMessage] = useState('');
   const nameRef = useRef<HTMLInputElement>(null);
   const goalRef = useRef<HTMLTextAreaElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -63,6 +76,105 @@ export default function ProjectQuote() {
   const selectedFeatures = featureOptions.filter((feature) =>
     features.includes(feature.id),
   );
+  const currentDraft: ProjectDraft = {
+    kind: kind as ProjectDraft['kind'],
+    pages: Number(pages),
+    features,
+    name,
+    brief,
+    step,
+    furthest,
+    complete,
+  };
+  const draftChanged =
+    savedDraft !== null && !draftMatches(savedDraft.draft, currentDraft);
+
+  function loadSavedDraft(): DraftReadResult {
+    try {
+      return readProjectDraft(window.localStorage, Date.now());
+    } catch {
+      return { status: 'unavailable' };
+    }
+  }
+
+  function showSavedDraftStatus(result: DraftReadResult) {
+    setSavedDraft(result.status === 'saved' ? result.saved : null);
+    setHasStoredDraft(['saved', 'expired', 'invalid'].includes(result.status));
+    setDraftMessage(
+      {
+        saved:
+          'A saved draft is available. Restoring it replaces your current choices.',
+        empty: '',
+        expired:
+          'The saved draft is older than seven days. Your current choices are unchanged.',
+        invalid:
+          'The saved draft could not be read. Your current choices are unchanged.',
+        unavailable:
+          'Draft storage is unavailable in this browser. You can still finish and export your brief.',
+      }[result.status],
+    );
+  }
+
+  useEffect(() => {
+    showSavedDraftStatus(loadSavedDraft());
+    setDraftReady(true);
+  }, []);
+
+  function saveDraft() {
+    let saved: SavedProjectDraft | null = null;
+    try {
+      saved = saveProjectDraft(window.localStorage, currentDraft, Date.now());
+    } catch {
+      /* Browser storage can be disabled before the helper receives it. */
+    }
+    if (!saved) {
+      setDraftMessage(
+        'This browser could not confirm the save. Your entries are still here.',
+      );
+      return;
+    }
+    setSavedDraft(saved);
+    setHasStoredDraft(true);
+    setDraftMessage('Draft saved on this device.');
+  }
+
+  function restoreDraft() {
+    const result = loadSavedDraft();
+    showSavedDraftStatus(result);
+    if (result.status !== 'saved') return;
+    const draft = result.saved.draft;
+    setKind(draft.kind);
+    setPages(String(draft.pages));
+    setFeatures(draft.features);
+    setName(draft.name);
+    setBrief(draft.brief);
+    setStep(draft.step);
+    setFurthest(draft.furthest);
+    setComplete(draft.complete);
+    setShowErrors(false);
+    setDraftMessage('Saved draft restored. You can continue from this step.');
+    requestAnimationFrame(() => headingRef.current?.focus());
+  }
+
+  function forgetDraft() {
+    let forgotten = false;
+    try {
+      forgotten = forgetProjectDraft(window.localStorage);
+    } catch {
+      /* Keep the current form intact. */
+    }
+    if (!forgotten) {
+      setDraftMessage(
+        'This browser could not confirm removal. Your current choices are unchanged.',
+      );
+      return;
+    }
+    setSavedDraft(null);
+    setHasStoredDraft(false);
+    setDraftMessage(
+      'Saved draft removed. Your current choices are still here.',
+    );
+  }
   const summary = `SCOPE STUDIO - ORIGINAL DEMONSTRATION\n\nProject: ${name.trim()}\nType: ${kindLabel}\nPages/screens: ${pages}\nFeatures: ${selectedFeatures.map((feature) => feature.name).join(', ') || 'Core scope only'}\n\nPROJECT GOAL\n${brief.trim()}\n\nSAMPLE PRICE BREAKDOWN (USD)\nCore project, including first page/screen: ${money(estimate.basePrice)}\nAdditional pages/screens: ${money(estimate.pageCost)}\n${selectedFeatures.map((feature) => `${feature.name}: ${money(feature.price)}`).join('\n')}${selectedFeatures.length ? '\n' : ''}Starting estimate: ${money(estimate.low)}\nScope allowance: ${money(estimate.high - estimate.low)}\nIllustrative range: ${money(estimate.low)}-${money(estimate.high)}\nIllustrative delivery: ${estimate.days} business days\n\nASSUMPTIONS\nSupplied content and existing compatible hosting. Final scope, integrations and delivery depend on the agreed requirements. Hosting, domains and third-party fees are excluded from these sample figures.\n\nThis is a locally generated sample brief, not a submitted enquiry or binding quote.`;
 
   function moveTo(nextStep: number) {
@@ -125,7 +237,7 @@ export default function ProjectQuote() {
             <p>
               Original interactive form demonstration.
               <br />
-              Your entries stay in this page.
+              No account or enquiry submission.
             </p>
           </div>
         </aside>
@@ -134,6 +246,61 @@ export default function ProjectQuote() {
             <span>PROJECT PLANNER</span>
             <Link href="/">All examples ↗</Link>
           </header>
+          <details className="quote-draft">
+            <summary className="quote-draft-heading">
+              <strong>Save or restore a draft</strong>
+              <span>
+                {savedDraft
+                  ? 'Saved draft available'
+                  : hasStoredDraft
+                    ? 'Saved draft needs attention'
+                    : 'On this device'}
+              </span>
+            </summary>
+            <p id="quote-draft-note">
+              Use fictional details. Restore within seven days in this browser.
+              Use Forget to remove the saved copy. Nothing is submitted.
+            </p>
+            <div
+              className="quote-draft-actions"
+              aria-describedby="quote-draft-note"
+            >
+              <Button
+                variant="outline"
+                disabled={!draftReady}
+                onClick={saveDraft}
+              >
+                Save draft on this device
+              </Button>
+              {savedDraft && (
+                <Button variant="outline" onClick={restoreDraft}>
+                  Restore saved draft
+                </Button>
+              )}
+              {hasStoredDraft && (
+                <Button variant="ghost" onClick={forgetDraft}>
+                  Forget saved draft
+                </Button>
+              )}
+            </div>
+            {savedDraft && (
+              <p className="quote-draft-time">
+                Saved{' '}
+                <time dateTime={new Date(savedDraft.savedAt).toISOString()}>
+                  {new Date(savedDraft.savedAt).toLocaleString(undefined, {
+                    dateStyle: 'medium',
+                    timeStyle: 'short',
+                  })}
+                </time>
+                {draftChanged
+                  ? ' · Current choices differ'
+                  : ' · Current choices saved'}
+              </p>
+            )}
+            <p className="quote-draft-status" role="status" aria-live="polite">
+              {draftMessage}
+            </p>
+          </details>
           {complete ? (
             <section className="quote-success">
               <div className="success-icon">
@@ -181,8 +348,9 @@ export default function ProjectQuote() {
                 </Button>
               </div>
               <p className="quote-fineprint">
-                Fictional project details only. Refreshing this page clears your
-                entries.
+                Fictional project details only. Unsaved changes are cleared when
+                you refresh. Saved drafts can be restored in this browser for
+                seven days.
               </p>
             </section>
           ) : (

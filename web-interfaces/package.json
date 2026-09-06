@@ -11,7 +11,7 @@
     "dev": "vinext dev",
     "build": "vinext build && node scripts/check-static-output.mjs",
     "start": "vinext start",
-    "test": "node --experimental-strip-types --test tests/clean-estimate.test.mjs tests/portfolio-flows.test.mjs tests/order-cleanup.test.mjs",
+    "test": "node --experimental-strip-types --test tests/clean-estimate.test.mjs tests/portfolio-flows.test.mjs tests/order-cleanup.test.mjs tests/project-draft.test.mjs",
     "typecheck": "tsc --noEmit",
     "format": "oxfmt",
     "check:languages": "node --experimental-strip-types scripts/check-cleaning-languages.mjs"
