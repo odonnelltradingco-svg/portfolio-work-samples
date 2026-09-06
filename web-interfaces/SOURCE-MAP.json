@@ -69,10 +69,10 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "aa3802dfd6ef4cf1adf68e784f006e7b7bdbe8c7e086549efda6b80059a98625",
-      "bytes": 19270,
-      "origin_version": 21,
-      "origin_commit": "1b8023003dd094c14e9632299be89f0c8c4f9670"
+      "origin_sha256": "defac64b8cb74498936a25dfbfdb57531b5503b72b45073c19180743eb259de2",
+      "bytes": 19439,
+      "origin_version": 22,
+      "origin_commit": "c1a30b6f2ef2dc68e7f78bf57c13ddd6dea7c365"
     },
     {
       "path": "app/portfolio.css",
@@ -468,6 +468,14 @@
         "app/portfolio.css"
       ],
       "change": "Compact project index with eight direct work-sample links, a PDF-report anchor and prominent one-page resume access; native links without new client state."
+    },
+    {
+      "site_version": 22,
+      "site_commit": "c1a30b6f2ef2dc68e7f78bf57c13ddd6dea7c365",
+      "files": [
+        "app/page.tsx"
+      ],
+      "change": "Product description and link now guide visitors through the verified seven-step sample-data purchase, inventory and simulated-sale preview."
     }
   ]
 }

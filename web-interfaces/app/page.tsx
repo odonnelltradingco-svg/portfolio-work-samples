@@ -344,13 +344,16 @@ export default function Home() {
             Connected business workflows.
           </h2>
           <p>
-            My own application brings inventory, sales, customers, fulfillment
-            and reporting into one workspace. Its public demo uses sample data,
-            so you can explore the product without signing in.
+            My own application connects inventory, sales, customers, fulfillment
+            and reporting. In its seven-step public preview, follow one sample
+            item from purchase through inventory and a simulated marketplace
+            sale, then inspect costs, fees, shipping and profit. No sign-in is
+            needed; the preview uses sample data.
           </p>
           <div className="work-original-links">
             <a href="https://odonnellos.online/demo">
-              Try the product demo <ArrowUpRight size={17} aria-hidden="true" />
+              Follow the seven-step demo{' '}
+              <ArrowUpRight size={17} aria-hidden="true" />
             </a>
             <a href="https://odonnellos.online/studio">
               Explore my studio <ArrowUpRight size={17} aria-hidden="true" />
