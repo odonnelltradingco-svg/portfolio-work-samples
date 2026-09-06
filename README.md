@@ -4,7 +4,7 @@
 
 Inspectable examples of the work I deliver: interactive React websites, careful data cleanup, useful spreadsheets, focused website repairs and clear analysis.
 
-[Live portfolio](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site) · [36-second walkthrough](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/#walkthrough) · [Studio](https://odonnellos.online/studio) · [Hire on Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be)
+[Explore by project](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/#project-index-title) · [36-second walkthrough](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/#walkthrough) · [Studio](https://odonnellos.online/studio) · [Hire on Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be)
 
 These are original portfolio demonstrations. All sample companies, orders and job records are fictional. The results below describe these supplied files, not a client's business performance.
 

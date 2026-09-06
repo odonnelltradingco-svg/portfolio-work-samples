@@ -2,7 +2,7 @@
 
 Original interactive portfolio demonstrations by Pierce O'Donnell: a service website, reporting dashboard, guided project brief and CSV review tool. Open a live example, inspect its implementation, or run the complete app locally.
 
-[Live portfolio](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site) · [Automatic checks](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) · [Discuss a project on Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be)
+[Explore by project](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/#project-index-title) · [Automatic checks](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) · [Discuss a project on Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be)
 
 ![Sunday Home's actual working interface](public/work/sunday-home.jpg)
 

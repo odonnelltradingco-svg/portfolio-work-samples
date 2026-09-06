@@ -69,15 +69,17 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "3e3efdcd79c1403db3047d9298e7e50ed3a5c3393fb4ee57989f4f13ab751cbd",
-      "bytes": 17585,
-      "origin_version": 20,
-      "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
+      "origin_sha256": "aa3802dfd6ef4cf1adf68e784f006e7b7bdbe8c7e086549efda6b80059a98625",
+      "bytes": 19270,
+      "origin_version": 21,
+      "origin_commit": "1b8023003dd094c14e9632299be89f0c8c4f9670"
     },
     {
       "path": "app/portfolio.css",
-      "origin_sha256": "722fe7f9803c3b3060d74f871bb4af07100470bdd514e165b055046eb0748419",
-      "bytes": 12120
+      "origin_sha256": "dc45f3a7e2d4c71aed9d0080c312d2854e79498600eba340b3945d64cdbaea40",
+      "bytes": 12993,
+      "origin_version": 21,
+      "origin_commit": "1b8023003dd094c14e9632299be89f0c8c4f9670"
     },
     {
       "path": "app/project-quote/layout.tsx",
@@ -457,6 +459,15 @@
         "tests/project-draft.test.mjs"
       ],
       "change": "Scope Studio optional device-local temporary draft save, restore and forget, with validation, explicit errors and six behavior tests."
+    },
+    {
+      "site_version": 21,
+      "site_commit": "1b8023003dd094c14e9632299be89f0c8c4f9670",
+      "files": [
+        "app/page.tsx",
+        "app/portfolio.css"
+      ],
+      "change": "Compact project index with eight direct work-sample links, a PDF-report anchor and prominent one-page resume access; native links without new client state."
     }
   ]
 }

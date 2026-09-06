@@ -41,6 +41,51 @@
 .portfolio-intro-actions .secondary-button {
   gap: 10px;
 }
+.work-project-index {
+  margin: 0 0 34px;
+  padding: 22px 0;
+  border-block: 1px solid #d8e0d9;
+}
+.work-project-index h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+.work-project-index ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-project-index a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: #b5c6bb;
+}
+.work-project-index a:hover {
+  text-decoration-color: currentColor;
+}
+.work-project-index svg {
+  flex-shrink: 0;
+}
+.work-project-index .work-index-resume {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #4d695f;
+}
+#csv-report {
+  scroll-margin-top: 28px;
+}
 .work-walkthrough {
   display: grid;
   grid-template-columns: minmax(230px, 0.7fr) minmax(0, 1.5fr);
