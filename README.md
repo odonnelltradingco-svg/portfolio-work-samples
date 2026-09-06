@@ -20,7 +20,7 @@ These are original portfolio demonstrations. All sample companies, orders and jo
 - [Open the job tracker report](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/job-tracker.html) or [download the Excel workbook](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/job-tracker.xlsx).
 - [See the HTML repair evidence](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/site-repair.html).
 - [Read the analysis report](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/fulfillment-eda.html) or [open the executed notebook](fulfillment-eda/fulfillment-eda.ipynb).
-- [Try the interactive Orderly CSV demo](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/automation).
+- [Try the interactive Orderly CSV demo](https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/data-cleanup).
 
 ## Run the checks
 
