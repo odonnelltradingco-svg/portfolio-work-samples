@@ -69,17 +69,17 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "defac64b8cb74498936a25dfbfdb57531b5503b72b45073c19180743eb259de2",
-      "bytes": 19439,
-      "origin_version": 22,
-      "origin_commit": "c1a30b6f2ef2dc68e7f78bf57c13ddd6dea7c365"
+      "origin_sha256": "20527d63a68575b9bd3c03b695f05a3bf669eddb937ba181064fa10e52262ca2",
+      "bytes": 19753,
+      "origin_version": 24,
+      "origin_commit": "d705e6c8f2f4bb34842af4a96b8c4de1f27e5b09"
     },
     {
       "path": "app/portfolio.css",
-      "origin_sha256": "dc45f3a7e2d4c71aed9d0080c312d2854e79498600eba340b3945d64cdbaea40",
-      "bytes": 12993,
-      "origin_version": 21,
-      "origin_commit": "1b8023003dd094c14e9632299be89f0c8c4f9670"
+      "origin_sha256": "e043f0a95c36f9dc34a8766c492aed0977f4bf482640f8577dd9dfd0a5655e07",
+      "bytes": 13228,
+      "origin_version": 24,
+      "origin_commit": "d705e6c8f2f4bb34842af4a96b8c4de1f27e5b09"
     },
     {
       "path": "app/project-quote/layout.tsx",
@@ -484,6 +484,15 @@
         "app/home-care/home-care.css"
       ],
       "change": "Cleaning preview and return buttons allow multiline labels and automatic height for narrow widths or enlarged text; existing 52px minimum retained."
+    },
+    {
+      "site_version": 24,
+      "site_commit": "d705e6c8f2f4bb34842af4a96b8c4de1f27e5b09",
+      "files": [
+        "app/page.tsx",
+        "app/portfolio.css"
+      ],
+      "change": "Portfolio contact section links to the published LinkedIn Services page alongside Upwork, with wrapping buttons and a header shortcut; existing Upwork channel-specific footer retained."
     }
   ]
 }

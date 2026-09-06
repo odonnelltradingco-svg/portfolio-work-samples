@@ -84,11 +84,8 @@ export default function Home() {
         <Link href="/" className="wordmark">
           PO<span> / </span>Selected work
         </Link>
-        <a
-          className="text-link"
-          href="https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be"
-        >
-          Contact on Upwork ↗
+        <a className="text-link" href="#contact-title">
+          Discuss a project ↓
         </a>
       </header>
       <section className="portfolio-intro">
@@ -203,8 +200,9 @@ export default function Home() {
                 values and explains exceptions.
               </li>
               <li>
-                <strong>O’Donnell OS Studio:</strong> my studio website. Message
-                me on Upwork with your goal, site or file, and deadline.
+                <strong>O’Donnell OS Studio:</strong> my studio website. Share
+                your goal, site or file, and deadline using the contact options
+                below.
               </li>
             </ol>
           </details>
@@ -499,17 +497,26 @@ export default function Home() {
         <div>
           <h2 id="contact-title">Have a page or workflow to improve?</h2>
           <p>
-            Send the goal, current stack and the specific result you need. We
-            can agree the scope, deliverables and acceptance criteria before the
-            work starts.
+            Share your goal, existing website or file, and preferred deadline.
+            We can agree what is included, the price and delivery before work
+            starts.
           </p>
         </div>
-        <a
-          href="https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be"
-          className="primary-button"
-        >
-          Discuss it on Upwork <ArrowUpRight size={18} aria-hidden="true" />
-        </a>
+        <div className="work-contact-actions">
+          <a
+            href="https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be"
+            className="primary-button"
+          >
+            Discuss it on Upwork <ArrowUpRight size={18} aria-hidden="true" />
+          </a>
+          <a
+            href="https://www.linkedin.com/services/page/b6872a346b4a4a740b"
+            className="secondary-button"
+          >
+            New inquiries on LinkedIn{' '}
+            <ArrowUpRight size={18} aria-hidden="true" />
+          </a>
+        </div>
       </section>
       <footer className="portfolio-footer">
         <p>

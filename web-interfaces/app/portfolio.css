@@ -412,8 +412,21 @@
   max-width: 680px;
   line-height: 1.75;
 }
-.work-contact > a {
-  white-space: nowrap;
+.work-contact-actions {
+  display: grid;
+  gap: 12px;
+  flex: 0 0 auto;
+  width: min(100%, 17rem);
+}
+.work-contact-actions > a {
+  height: auto;
+  min-height: 52px;
+  line-height: 1.5;
+  white-space: normal;
+  text-align: center;
+}
+.work-contact-actions svg {
+  flex-shrink: 0;
 }
 .portfolio-work .portfolio-footer {
   margin-top: 0;
