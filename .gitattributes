@@ -6,6 +6,11 @@
 *.css text eol=lf
 *.svg text eol=lf
 *.ipynb text eol=lf
-*.png binary
-*.xlsx binary
 *.csv -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp4 binary
+*.zip binary
+*.xlsx binary
