@@ -49,6 +49,10 @@ Portable report generation; validated input; exact monetary calculations; wrappe
 
 The earlier application attachment remains a separate visual explanation of the same three-order example. This package is the portable generator and its own reproducible report. It is also separate from the 12-record `csv-cleanup` example, which exports CSV/JSON rather than PDF.
 
-This conversion core does not run a scheduler, connect to mailboxes, provide file-history tracking, or handle parallel workers. A production integration needs the actual input and output samples, agreed calculations and delivery environment. No claims of client results or production processing are made.
+### Optional folder workflow
+
+[Run the local folder-processing extension](FOLDER-WORKFLOW.md) to validate a CSV inbox, generate reports, track successful file fingerprints in SQLite and explain failures. It skips byte-identical resubmissions, preserves conflicting reports, recovers a missing reproducible report and rejects overlapping writers. Twelve additional tests exercise those behaviors and interruption recovery. No scheduler or email account is installed or connected.
+
+The original `report_orders.py` conversion core and its supplied PDF remain unchanged; the wrapper is `process_folder.py`. A production integration needs the actual input and output samples, agreed calculations and delivery environment. The folder wrapper supports a single local output directory with SQLite locking and hard-link support, not a distributed worker service. No claims of client results or production processing are made.
 
 For projects that begin on Upwork, please [message and hire through Upwork](https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be).

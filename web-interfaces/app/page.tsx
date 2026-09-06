@@ -359,7 +359,8 @@ export default function Home() {
             <h3>Clear order reports. Calculations you can follow.</h3>
             <p>
               Three fictional orders, a generated PDF and the complete source.
-              Validated input, exact totals, page handling and ten behavior checks.
+              Includes a repeatable folder workflow, file history, duplicate handling
+              and readable errors, with ten conversion and twelve workflow checks.
             </p>
             <strong>
               Download the report and source{' '}

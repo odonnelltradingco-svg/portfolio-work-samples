@@ -44,7 +44,7 @@ jobs:
       - name: Install the recorded PDF dependencies
         if: ${{ matrix.analysis }}
         run: python -m pip install -r csv-to-pdf/requirements.txt
-      - name: Run all 34 Python checks
+      - name: Run all 46 Python checks
         if: ${{ matrix.analysis }}
         run: python verify_samples.py --include-eda --include-pdf
       - name: Generate the sample order report

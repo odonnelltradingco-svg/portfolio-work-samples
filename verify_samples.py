@@ -10,7 +10,7 @@ def main() -> int:
     parser.add_argument('--include-eda', action='store_true',
                         help='Also run the five Pandas analysis tests; install its requirements first.')
     parser.add_argument('--include-pdf', action='store_true',
-                        help='Also run the ten CSV-to-PDF tests; install its requirements first.')
+                        help='Also run the ten conversion and twelve folder-workflow tests; install PDF requirements first.')
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     suites = [('csv-cleanup', 'test_clean_orders.py'),
@@ -20,6 +20,7 @@ def main() -> int:
         suites.append(('fulfillment-eda', 'test_analysis.py'))
     if args.include_pdf:
         suites.append(('csv-to-pdf', 'test_report_orders.py'))
+        suites.append(('csv-to-pdf', 'test_process_folder.py'))
     failed = []
     for folder, filename in suites:
         print(f'\nRunning {folder}', flush=True)

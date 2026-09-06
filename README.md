@@ -14,7 +14,7 @@ These are original portfolio demonstrations. All sample companies, orders and jo
 | --- | --- | --- |
 | Build a responsive React interface | [Four interactive web demos](web-interfaces) | Cleaning estimate, sales dashboard, guided brief and CSV review; complete local app, typed source and 22 logic tests. |
 | Clean an inconsistent order export | [Order CSV cleanup](csv-cleanup) | 12 input records → 6 accepted + 6 exceptions; exact decimal totals, preserved exceptions, source references and overwrite protection. |
-| Turn an order CSV into a clear PDF | [CSV-to-PDF generator](csv-to-pdf) | Three fictional orders total GBP 32.45; portable report generation, ten behavior checks, repeated table headings and overwrite protection. |
+| Turn daily CSV files into clear PDFs | [CSV-to-PDF generator and folder workflow](csv-to-pdf) | Three fictional orders total GBP 32.45; validated reports, file-history tracking, duplicate-run handling and recovery. Ten conversion tests plus twelve folder-workflow tests. |
 | Organize an Excel job tracker | [Job tracker cleanup](job-tracker) | 18 records → 10 active + 4 archived + 4 for review; a five-sheet workbook, original records and a decision log. |
 | Fix an HTML site that breaks after upload | [Local-to-hosted HTML repair](site-repair) | Three isolated reference fixes, before/after files and a case-sensitive local HTTP check at both root and subfolder paths. |
 | Analyze an order dataset | [Fulfillment EDA](fulfillment-eda) | 243 fictional records → 233 accepted + 10 for review; an executed Pandas notebook, three charts and an explanation of missing data and an outlier. |
@@ -29,7 +29,7 @@ These are original portfolio demonstrations. All sample companies, orders and jo
 
 ## Run the checks
 
-[Open the automatic verification runs](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) to inspect the exact commit, environment and test logs. The Python jobs check 19 standard-library tests on Python 3.10, all 34 Python tests on Python 3.12, PDF generation, and a full notebook execution in a fresh kernel on Ubuntu. The React job runs 22 logic tests, TypeScript checks and a production build. Each job checks that supplied files remain unchanged. The badge shows the current workflow status, not a claim about a client system.
+[Open the automatic verification runs](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) to inspect the exact commit, environment and test logs. The Python jobs check 19 standard-library tests on Python 3.10, all 46 Python tests on Python 3.12, PDF generation, and a full notebook execution in a fresh kernel on Ubuntu. The React job runs 22 logic tests, TypeScript checks and a production build. Each job checks that supplied files remain unchanged. The badge shows the current workflow status, not a claim about a client system.
 
 Download or clone this repository, then run this command from its top folder with Python 3.10 or newer:
 
@@ -39,7 +39,7 @@ python verify_samples.py
 
 This runs the **19 standard-library tests** for CSV cleanup, the job tracker and HTML repair. It needs no packages or credentials. The HTML tests briefly start a loopback-only server and close it afterward. The supplied input files remain unchanged.
 
-For all **34 Python tests**, use Python 3.12 in a separate virtual environment, install the recorded dependencies, then include both optional suites:
+For all **46 Python tests**, use Python 3.12 in a separate virtual environment, install the recorded dependencies, then include both optional suites:
 
 ```text
 python -m pip install -r fulfillment-eda/requirements.txt
@@ -51,7 +51,7 @@ For the **22 React interface-logic tests** and the complete local web app, follo
 
 See each example's README for its input schema, commands, business rules and limits. The EDA README also explains how to re-execute the notebook. The tracker script generates CSV/JSON output; the formatted workbook is a separate, manually editable snapshot.
 
-The earlier 24-test total remains reproducible with `--include-eda` alone. Adding `--include-pdf` contributes ten conversion tests; neither total includes the separate JavaScript suite.
+The earlier 24-test total remains reproducible with `--include-eda` alone. Adding `--include-pdf` contributes ten conversion tests and twelve folder-workflow tests; neither total includes the separate JavaScript suite.
 
 ## What a client handoff includes
 

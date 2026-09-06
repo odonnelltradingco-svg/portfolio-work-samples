@@ -69,10 +69,10 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "e5c5777c233eb13821c6951f133a60acdf82e75b628aa0ba6618bcf1232a94ee",
-      "bytes": 17493,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+      "origin_sha256": "a9ad28aa7ac53b5fc2f9f3b18a6e87afd28250d04aaa78bff63aaebe1326f66a",
+      "bytes": 17578,
+      "origin_version": 19,
+      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
     },
     {
       "path": "app/portfolio.css",
@@ -396,10 +396,10 @@
     },
     {
       "path": "public/downloads/csv-to-pdf-sample.zip",
-      "origin_sha256": "d5b40f4947ba58c0f4c6effb008914add77de7653ebfafd34fcfea20c6fcd286",
-      "bytes": 10398,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+      "origin_sha256": "f53549fa18c1d999a30d82c54bd61c3be19b363b981965d9597729e6003534d5",
+      "bytes": 19250,
+      "origin_version": 19,
+      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
     }
   ],
   "updates": [
@@ -418,6 +418,15 @@
         "public/downloads/csv-to-pdf-sample.zip"
       ],
       "change": "Complete English/French cleaning flow, localized shared controls and source navigation; current download index and portable CSV-to-PDF downloads."
+    },
+    {
+      "site_version": 19,
+      "site_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126",
+      "files": [
+        "app/page.tsx",
+        "public/downloads/csv-to-pdf-sample.zip"
+      ],
+      "change": "Nine-file CSV-to-PDF download with local folder processing, file history, repeat-run and failure handling; updated download description."
     }
   ]
 }
