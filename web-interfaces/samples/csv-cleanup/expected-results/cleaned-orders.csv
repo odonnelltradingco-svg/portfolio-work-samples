@@ -1,0 +1,7 @@
+order_id,date,customer,quantity,unit_price,status,total_usd,source_line
+ORD-001,2026-08-01,Juniper Supply,2,12.50,paid,25.00,2
+ORD-002,2026-08-02,"Cedar, Market",3,8.25,paid,24.75,3
+ORD-003,2026-08-03,Aster Goods,1,19.95,pending,19.95,4
+ORD-004,2026-08-04,Mara Ellis,2,4.50,refunded,9.00,5
+ORD-005,2026-08-05,Kite Trading,4,10.00,paid,40.00,6
+ORD-006,2026-08-06,Westhaven,1,0.00,paid,0.00,7

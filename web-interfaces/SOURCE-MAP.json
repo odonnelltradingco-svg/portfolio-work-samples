@@ -1,0 +1,367 @@
+{
+  "origin": "Public portfolio source snapshot, Site version 15",
+  "origin_commit": "221df0c52f62ea40d9a416711eeff70fbd6da143",
+  "notes": "Application, tests and public assets copied from the published portfolio. Code formatting may be normalized; local build configuration omits account-specific hosting. Origin hashes record the source before formatting.",
+  "files": [
+    {
+      "path": ".oxfmtrc.json",
+      "origin_sha256": "0962fdddb1840a06b5afb918ff3f2ff56bce346082651ec5c3567c01dd809f17",
+      "bytes": 260
+    },
+    {
+      "path": "app/data-cleanup/data-cleanup.css",
+      "origin_sha256": "eb0f15b4969c4607a5e2285300249cf457d49ccb151ab1b8c473403dc1ad0c82",
+      "bytes": 16060
+    },
+    {
+      "path": "app/data-cleanup/layout.tsx",
+      "origin_sha256": "f34059551fc1f843b6240bdd48b75eb70df377c6f6d359cc1f002c6d450a2c9a",
+      "bytes": 442
+    },
+    {
+      "path": "app/data-cleanup/page.tsx",
+      "origin_sha256": "b586d5f1c9f521726c64dd2c235898c80562c072c9bb17ce8e294ade9a9fb28d",
+      "bytes": 29995
+    },
+    {
+      "path": "app/globals.css",
+      "origin_sha256": "c5162b0de05d217952e855fc5aec854da7ee977b727779f0a01d4fb29045e034",
+      "bytes": 23258
+    },
+    {
+      "path": "app/home-care/home-care.css",
+      "origin_sha256": "53d4ba30607656deb654b638c58fc21ace4af3e2ebf46ba91a8fab160c820dbf",
+      "bytes": 9127
+    },
+    {
+      "path": "app/home-care/layout.tsx",
+      "origin_sha256": "26808fa76b076f0afa2fe18bb962d64588e69b3d4b0ac8913db0f1281022381e",
+      "bytes": 469
+    },
+    {
+      "path": "app/home-care/page.tsx",
+      "origin_sha256": "d7da55b59dc79378b4ee6a90d7ca6d5019d184f235214f60ec1a0bc40ca3be90",
+      "bytes": 12740
+    },
+    {
+      "path": "app/insights/insights.css",
+      "origin_sha256": "85e8f43070ac31ca71a3d5dd446d4467486d3dea3cd06231d12c9bcb0d909d4d",
+      "bytes": 6592
+    },
+    {
+      "path": "app/insights/layout.tsx",
+      "origin_sha256": "51b050719920fde95a047e60e2b5e70a8b5f9e4836a671c7f8a948149f1e47b4",
+      "bytes": 470
+    },
+    {
+      "path": "app/insights/page.tsx",
+      "origin_sha256": "a2ffcc31d46eba296450d6a8e6cdc88ac9a72556fea10c12a42e63e4fa6871f1",
+      "bytes": 16621
+    },
+    {
+      "path": "app/layout.tsx",
+      "origin_sha256": "1e7785aef2e3a35abe2a40e5bec75404ab473d8c0f6a42bb7ea4c7f330d15754",
+      "bytes": 927
+    },
+    {
+      "path": "app/page.tsx",
+      "origin_sha256": "146183ed6622376e0bd401d65ad47cb436b47a414ae8ba6ff8e52a2c25c15141",
+      "bytes": 16921
+    },
+    {
+      "path": "app/portfolio.css",
+      "origin_sha256": "722fe7f9803c3b3060d74f871bb4af07100470bdd514e165b055046eb0748419",
+      "bytes": 12120
+    },
+    {
+      "path": "app/project-quote/layout.tsx",
+      "origin_sha256": "84d1235f86ac6f4429195fde6dc57301433141e8e2228cba77d017aaf8165bf8",
+      "bytes": 455
+    },
+    {
+      "path": "app/project-quote/page.tsx",
+      "origin_sha256": "66270b281fa691c65c9a273b11dd195253e4aa111d0b5f86873ea5d98f8c1dd5",
+      "bytes": 22230
+    },
+    {
+      "path": "app/project-quote/project-quote.css",
+      "origin_sha256": "e6ef6a5e5ab7611826015f84d1ec99dfa7b6acb58c6d0f49a41a642780f793c6",
+      "bytes": 5925
+    },
+    {
+      "path": "components/demo-shared.tsx",
+      "origin_sha256": "6b82f4829e1fb19c73c5862d079ffbb08dfcd1258d22262a4e0dc1b258d5031d",
+      "bytes": 1337
+    },
+    {
+      "path": "components/export-preview.css",
+      "origin_sha256": "fe29bb5c8cdb0b5795b465373c31788108c8c50b468c7274f1d16a38200f9253",
+      "bytes": 1611
+    },
+    {
+      "path": "components/export-preview.tsx",
+      "origin_sha256": "2d7c9604db2b4d3c324fc6b4c56b8dbc8dc2c0890020df4470156051879dda9a",
+      "bytes": 3455
+    },
+    {
+      "path": "components/site-link.tsx",
+      "origin_sha256": "781216fc753c3bc675dcedee017b080bff344ece6f757f631ee244630d12da11",
+      "bytes": 320
+    },
+    {
+      "path": "components/ui/accordion.tsx",
+      "origin_sha256": "33e1c60ba503f4eb36f9a8b1f68b236174b11656d8efea6bac65abddda2f9019",
+      "bytes": 2664
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "origin_sha256": "081d2a1cb4f3aec636a6894d9eff4e90d476d5db85b82d0399c1f4d18517112e",
+      "bytes": 3247
+    },
+    {
+      "path": "components/ui/checkbox.tsx",
+      "origin_sha256": "56b2869e5478f38238e6a3d8aefabfbe8af565b38b2ffad06466487b3eacf154",
+      "bytes": 1538
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "origin_sha256": "8bc85def62538b4e62e8530c6b0ba167a192c38519c05f104bf6e10de73b811f",
+      "bytes": 4087
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "origin_sha256": "6763c86c34c1c07826386d376f5da8fe2e41585bff3615716d5da88915e088d8",
+      "bytes": 1046
+    },
+    {
+      "path": "components/ui/progress.tsx",
+      "origin_sha256": "0d8ddec9731940e104b851cf3ac67d2fa8589b289824317a9e8f326e090ba65a",
+      "bytes": 1751
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "origin_sha256": "43f2d6c2f5bdd4a26c57d93e6f141be20472f9bb8777d9a0d61cd8a5e281a999",
+      "bytes": 1843
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "origin_sha256": "45489c502a21fdd5271481d64ad8f762181c9653d8d26bdc6f75450b78c3c852",
+      "bytes": 6700
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "origin_sha256": "88f2ba7877eea7f34a5da18b7fa096eb2c7bed602677ce54f5494b494c5afc2e",
+      "bytes": 2418
+    },
+    {
+      "path": "components/ui/tabs.tsx",
+      "origin_sha256": "dd914d769bc223b5d5ea56839a7752e534eb475f8d2897d5675606c368bbca1f",
+      "bytes": 3510
+    },
+    {
+      "path": "components/ui/textarea.tsx",
+      "origin_sha256": "7ae7f0f5d907be24658652c771fee1685193102bf3200aafbf578d144d379fbf",
+      "bytes": 847
+    },
+    {
+      "path": "lib/demo-model.ts",
+      "origin_sha256": "30da8a1c13e093e4841975d2e633e9cc46c8ac0309f8fe62bc02c45c536d83b5",
+      "bytes": 7058
+    },
+    {
+      "path": "lib/order-cleanup.ts",
+      "origin_sha256": "408630f440a7d57bd15dc0328ce39ceafa594473f8fc86a9be933724e95bd9d5",
+      "bytes": 8829
+    },
+    {
+      "path": "lib/order-sample.ts",
+      "origin_sha256": "f32ae3ba5eca98b869a3766bd5f52e6745026afec9c8043bb58db1b89df8ffdb",
+      "bytes": 619
+    },
+    {
+      "path": "lib/utils.ts",
+      "origin_sha256": "9304a861c8673bee09e0f12de31773abbde503b02e59dfd74763ddec2e37cf05",
+      "bytes": 169
+    },
+    {
+      "path": "public/downloads/csv-cleanup-sample.zip",
+      "origin_sha256": "92cc1b81cc9268e55a33a7b1fbc80de565ffc4cb55347922b061895ed5e0e99b",
+      "bytes": 7890
+    },
+    {
+      "path": "public/downloads/fulfillment-eda.html",
+      "origin_sha256": "1d12b45dc44c4713dde3e3087df8ef7d208d230a4ee75b783d008dad84364712",
+      "bytes": 341763
+    },
+    {
+      "path": "public/downloads/fulfillment-eda.ipynb",
+      "origin_sha256": "d68029f14e1b6dceb6376a20300e090dd3e4754749d7ac1070d399dbc743ff49",
+      "bytes": 381000
+    },
+    {
+      "path": "public/downloads/fulfillment-eda.zip",
+      "origin_sha256": "162bdc9f4bf133475fc5e2c01837cbbe860864733a1e24d235bd9e0bc74bc4e1",
+      "bytes": 755592
+    },
+    {
+      "path": "public/downloads/job-tracker-active.png",
+      "origin_sha256": "8fe8b52e6e6be6aad62e9a172621aafef94adf6604cb2ba5ba820283f83ac76c",
+      "bytes": 152094
+    },
+    {
+      "path": "public/downloads/job-tracker-overview.png",
+      "origin_sha256": "1e599b2a20259a282e2fef060a29897428f58a860cb4da4b761f46101fc5a555",
+      "bytes": 126732
+    },
+    {
+      "path": "public/downloads/job-tracker.html",
+      "origin_sha256": "7c1dda0adc1407124ee1d7378aee5eb051da1dda86e57b9f9dfe8ab62f971e19",
+      "bytes": 9018
+    },
+    {
+      "path": "public/downloads/job-tracker.xlsx",
+      "origin_sha256": "af860a054d5bf4733fb77bd112704e5b071bf11faf77bd9a06b0f74a029c54fc",
+      "bytes": 18420
+    },
+    {
+      "path": "public/downloads/job-tracker.zip",
+      "origin_sha256": "fbd2ccab43fc5a13848a8986f9382bad800bff1d89cd2f65f39337fd98239e0f",
+      "bytes": 26750
+    },
+    {
+      "path": "public/downloads/orderly-case-study.pdf",
+      "origin_sha256": "37f2d2c24df2f69a14afd2c58a9674376aa981a7cc9ba5512b58645b3205bcb4",
+      "bytes": 178469
+    },
+    {
+      "path": "public/downloads/pierce-odonnell-professional-resume.pdf",
+      "origin_sha256": "44eb051083fc7ba68ad44c5b6d930bc7792299151b24d388a4df72cd7bae4843",
+      "bytes": 77156
+    },
+    {
+      "path": "public/downloads/pierce-odonnell-professional-resume.txt",
+      "origin_sha256": "affab6f2cca3706563002759de110751e7140620f1f3828b01e23f235b979f63",
+      "bytes": 2539
+    },
+    {
+      "path": "public/downloads/pierce-odonnell-resume.pdf",
+      "origin_sha256": "28025987f18c4187c5cf1d82136e4d09d1fba5c2b379128c5394e387778274f9",
+      "bytes": 614764
+    },
+    {
+      "path": "public/downloads/selected-web-projects.pdf",
+      "origin_sha256": "7103f559e9d18563f77d68b6609b8df5ee6d6becdf379d237c19a606dc8181dc",
+      "bytes": 485904
+    },
+    {
+      "path": "public/downloads/selected-work.mp4",
+      "origin_sha256": "f8304990b953f9475d416911c87e9aa1aa213fbd618eacd914cdf7d69bb45128",
+      "bytes": 5491902
+    },
+    {
+      "path": "public/downloads/selected-work.vtt",
+      "origin_sha256": "72177fcadc1a5a8283b92fb531faae357f4ed272a48226263e190f29040b9bb1",
+      "bytes": 879
+    },
+    {
+      "path": "public/downloads/site-repair.html",
+      "origin_sha256": "c33acc728b367dc5a3b16e2f755b595ec96489e7ecd7528672fcb9dbc35a080b",
+      "bytes": 12196
+    },
+    {
+      "path": "public/downloads/site-repair.zip",
+      "origin_sha256": "e8ba735a6eec5aea96f9ea5fb46c0e3938422c188219c5c885cd804eb0738315",
+      "bytes": 18117
+    },
+    {
+      "path": "public/favicon.svg",
+      "origin_sha256": "63e94f3f707eab3a2188e8457f35758441078e0b8e7f7dd764a9ac2e957dc9f4",
+      "bytes": 250
+    },
+    {
+      "path": "public/repair-demo/assets/mark.svg",
+      "origin_sha256": "43f94928edbb194c0487f2af6a93443d2d440205719901dd8d15c9bc46529ea9",
+      "bytes": 225
+    },
+    {
+      "path": "public/repair-demo/assets/site.css",
+      "origin_sha256": "a7abc8d888f6d2fe0a441dcabef65946fb3e0916769e66179b0c516e3f44099e",
+      "bytes": 1994
+    },
+    {
+      "path": "public/repair-demo/details.html",
+      "origin_sha256": "27a67b2f8178f0b3ea538b6d0f77da6d95fd7078d4f571210e841843586d76c7",
+      "bytes": 1208
+    },
+    {
+      "path": "public/repair-demo/index.html",
+      "origin_sha256": "1d0fbb55a362610fadb0b55bc8b06acb43f86a50f2e3f83d0580eb4f21227cb8",
+      "bytes": 1505
+    },
+    {
+      "path": "public/residential-cleaning-hero.png",
+      "origin_sha256": "b5a7755a3723e0fa375579a5a1737e274e52022c408b1563e3ececde6e5ad1ae",
+      "bytes": 2197025
+    },
+    {
+      "path": "public/work/fieldnote.jpg",
+      "origin_sha256": "4c680a15ce34b2ca04ce0bee9a1137f0ea2033863e3ea017b013df915c9d15f8",
+      "bytes": 79904
+    },
+    {
+      "path": "public/work/odonnell-os.jpg",
+      "origin_sha256": "0a15aad56df53b4946ee618ac2ab7400325b0909776459a3f8f7bcbaa436e9db",
+      "bytes": 87875
+    },
+    {
+      "path": "public/work/scope-studio.jpg",
+      "origin_sha256": "96873f5e1aa4084e11be2f43b9ea7b1f441afc3e6e8b0f389209c25530ca8de3",
+      "bytes": 92412
+    },
+    {
+      "path": "public/work/selected-work-poster.jpg",
+      "origin_sha256": "00e54f0012571cebd29df4733ca11e7bf33cfba18d7298f3c22e2b1e8617e9d7",
+      "bytes": 128119
+    },
+    {
+      "path": "public/work/sunday-home.jpg",
+      "origin_sha256": "ae85905f04c4029383637f749998555c57430d012716ff83cf2151df01e171b6",
+      "bytes": 85145
+    },
+    {
+      "path": "tests/clean-estimate.test.mjs",
+      "origin_sha256": "a34af79d616bdb83c83fc350d1e0a4ad96a8d264efc84772116c04d387891d02",
+      "bytes": 1767
+    },
+    {
+      "path": "tests/order-cleanup.test.mjs",
+      "origin_sha256": "ed3242a14a71ffe117575ac7736cafc69cd8ea177dfae47ac749944dbee9f714",
+      "bytes": 7019
+    },
+    {
+      "path": "tests/portfolio-flows.test.mjs",
+      "origin_sha256": "5b2467430e9e027049655e6de314a062d0d78083683121deb3187469600356cd",
+      "bytes": 4125
+    },
+    {
+      "path": "samples/csv-cleanup/sample-orders.csv",
+      "origin_sha256": "4abfc130636469dba3e7ed87e6c00959675cab7253478f09c542b03f0b4d8263",
+      "bytes": 568
+    },
+    {
+      "path": "samples/csv-cleanup/expected-results/summary.json",
+      "origin_sha256": "f77d4ced4446b42789ef71d47f35a0fc1959e4e5c4223d61b7ac403c8bb22dc4",
+      "bytes": 696
+    },
+    {
+      "path": "samples/csv-cleanup/expected-results/exceptions.json",
+      "origin_sha256": "5b175d673914aadb3081b097bdf1ee34f4c1d803da8812a7003235edc22f04e4",
+      "bytes": 1396
+    },
+    {
+      "path": "samples/csv-cleanup/expected-results/cleaned-orders.csv",
+      "origin_sha256": "4d53d0f4b03c06db1dbad79c79b69048dbef03666239e1cbdb6f0e96049367fc",
+      "bytes": 398
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+order_id,date,customer,quantity,unit_price,status
+ ORD-001 ,2026-08-01, Juniper Supply ,2,12.50, Paid
+ORD-002,2026-08-02,"Cedar, Market",3,8.25,paid
+ORD-003,2026-08-03,Aster Goods,1,19.95,pending
+ORD-004,2026-08-04,Mara Ellis,2,4.50,refunded
+ORD-005,2026-08-05,Kite Trading,4,10.00,paid
+ORD-006,2026-08-06,Westhaven,1,0,paid
+ORD-005,2026-08-07,Kite Trading,4,10.00,paid
+ORD-008,2026-02-30,Rowan,1,12.00,paid
+ORD-009,2026-08-09,,1,12.00,paid
+ORD-010,2026-08-10,Nora Bell,0,12.00,paid
+ORD-011,2026-08-11,Theo Lane,1,NaN,paid
+ORD-012,2026-08-12,Lila Moss,1,15.00,unknown

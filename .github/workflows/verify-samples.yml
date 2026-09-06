@@ -52,3 +52,36 @@ jobs:
         run: python -m nbconvert --to notebook --execute fulfillment-eda.ipynb --output fulfillment-eda-rerun.ipynb --ExecutePreprocessor.timeout=180
       - name: Confirm the supplied files remain unchanged
         run: git diff --exit-code
+
+  web-interfaces:
+    name: React interfaces
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: web-interfaces
+    steps:
+      - name: Check out the published samples
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Set up the recorded package manager
+        uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+        with:
+          version: '11.19.0'
+          run_install: false
+      - name: Install exact dependency versions
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Run 22 interface-logic tests
+        run: pnpm test
+      - name: Check TypeScript
+        run: pnpm typecheck
+      - name: Build the working routes
+        run: pnpm build
+      - name: Confirm the supplied files remain unchanged
+        run: git diff --exit-code

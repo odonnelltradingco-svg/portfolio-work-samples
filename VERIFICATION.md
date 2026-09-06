@@ -4,6 +4,8 @@
 
 The [public workflow](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) runs on each push to `main` and each pull request. Open a completed run for its exact commit, result and logs. Python 3.10 runs the 19 standard-library tests; Python 3.12 runs all 24 tests and re-executes the complete EDA notebook in a fresh kernel. Both jobs check that tracked sample files remain unchanged. The notebook's newly generated outputs stay in the temporary runner workspace.
 
+The React job installs the recorded dependencies with a frozen lockfile, runs 22 interface-logic tests, checks TypeScript and builds the routes. It also confirms tracked source files remain unchanged. These are code/build checks, not automated browser interaction or accessibility conformance tests.
+
 This adds a Linux environment check to the local verification below. It does not test Excel's desktop interface or the hosted browser demos. No deployment credentials are used; third-party actions are pinned to exact commits and repository access is read-only.
 
 ## Recorded local verification
@@ -24,4 +26,4 @@ The suites check the supplied partitions, original values, exact money totals, d
 
 The original EDA notebook includes executed cell outputs and figures. See its README to re-execute it in a fresh kernel. The suite checks the analysis functions; running the suite alone does not rerender every chart or rerun the notebook.
 
-The source files in the four sample folders were copied from the portfolio's published downloadable samples. Repeated notebook-run folders, Python caches and local environments are excluded from the repository.
+The four Python/repair sample folders were copied from the portfolio's published downloads. The web-interface package records its separate published-site provenance in `web-interfaces/SOURCE-MAP.json`. Repeated notebook-run folders, Python caches, installed dependencies and local environments are excluded from the repository.

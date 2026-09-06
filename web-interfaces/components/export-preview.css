@@ -1,0 +1,82 @@
+.export-preview {
+  width: 720px !important;
+  max-width: calc(100% - 32px) !important;
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  padding: 28px !important;
+  gap: 18px !important;
+  background: #fff;
+  color: #233348;
+}
+.export-preview [data-slot='dialog-close'] {
+  height: 44px;
+  width: 44px;
+}
+.export-title {
+  font-size: 26px !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.025em;
+  padding-right: 24px;
+}
+.export-description {
+  font-size: 16px !important;
+  line-height: 1.7;
+}
+.export-file {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  color: #5d6c7d;
+  flex-wrap: wrap;
+}
+.export-file > span:first-child {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}
+.export-content {
+  min-height: 280px;
+  max-height: 40dvh;
+  background: #f5f7fa;
+  padding: 16px !important;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow: auto;
+  resize: vertical;
+  color: #26394d;
+}
+.export-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.export-actions :is(a, button) {
+  min-height: 48px;
+  font-size: 16px;
+  gap: 10px;
+}
+.export-message {
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 23px;
+  color: #5a6a7c;
+}
+@media (max-width: 520px) {
+  .export-preview {
+    padding: 24px 20px !important;
+  }
+  .export-title {
+    font-size: 23px !important;
+  }
+  .export-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .export-content {
+    min-height: 220px;
+  }
+}

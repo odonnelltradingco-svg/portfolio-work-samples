@@ -1,0 +1,537 @@
+.home-care {
+  --muted-foreground: #586b5d;
+}
+.home-care section[id] {
+  scroll-margin-top: 24px;
+}
+.home-care .eyebrow {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+.home-care .demo-ribbon,
+.home-care .care-perks,
+.home-care .care-footer {
+  font-size: 14px;
+}
+.home-care .care-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.home-care .care-book {
+  padding-bottom: 0;
+}
+.home-care :is(a, button, [role='checkbox'], [role='radio']):focus-visible,
+.care-preview button:focus-visible {
+  outline: 3px solid #638361;
+  outline-offset: 5px;
+}
+.care-skip {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 12px 20px;
+  background: #203c32;
+  color: white;
+  border-radius: 8px;
+  z-index: 100;
+  transform: translateY(-180%);
+}
+.care-skip:focus {
+  transform: translateY(0);
+}
+.home-care .care-photo-note {
+  font-size: 14px;
+}
+.home-care .care-services {
+  display: block;
+  max-width: 1440px;
+  padding-top: 54px;
+  padding-bottom: 84px;
+}
+.care-section-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 55px;
+  margin-bottom: 36px;
+}
+.care-section-intro > p {
+  color: #5b6d5e;
+  max-width: 350px;
+  line-height: 1.8;
+}
+.care-room-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.care-room {
+  padding: 28px 0 0;
+  border-top: 1px solid #bfcdbb;
+}
+.care-room-number {
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: #586e5b;
+}
+.care-room h3 {
+  font:
+    400 28px/1.2 Georgia,
+    serif;
+  letter-spacing: -0.025em;
+  margin: 20px 0 10px;
+}
+.care-room > p {
+  color: #5c6e61;
+}
+.care-room ul,
+.care-preview-includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.care-room li,
+.care-preview-includes li {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  font-size: 16px;
+}
+.care-room li svg,
+.care-preview-includes li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #55764e;
+}
+.home-care .care-estimate {
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: 64px;
+  padding: 80px max(5vw, calc((100vw - 1260px) /2));
+}
+.home-care .care-estimate h2 {
+  line-height: 1.07;
+}
+.home-care .care-estimate h2 em {
+  color: #597952;
+}
+.care-steps {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+.care-steps li {
+  display: flex;
+  gap: 14px;
+}
+.care-steps li > span {
+  border: 1px solid #b3c4ad;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+.care-steps strong {
+  font-weight: 600;
+}
+.care-steps p {
+  color: #5b6d5e;
+  font-size: 16px;
+  margin-top: 3px;
+  max-width: 300px;
+}
+.home-care .care-estimate-intro .care-demo-note {
+  max-width: 370px;
+  font-size: 14px;
+}
+.home-care .estimate-card {
+  padding: 32px;
+  min-width: 0;
+  box-shadow: 0 16px 48px #283e2610;
+  border: 1px solid #dce4d6;
+}
+.care-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #5b7455;
+}
+.estimate-card h3 {
+  font:
+    400 32px/1.25 Georgia,
+    serif;
+  margin: 14px 0 25px;
+  letter-spacing: -0.025em;
+}
+.home-care .demo-select {
+  min-height: 50px !important;
+  font-size: 16px !important;
+}
+.home-care .field-label {
+  font-size: 14px;
+}
+.care-rhythms {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px !important;
+}
+.care-rhythm {
+  padding: 14px 10px;
+  border: 1px solid #d8ded4;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  min-width: 0;
+  background: #fffefa;
+}
+.care-rhythm.selected {
+  border-color: #28543f;
+  background: #edf2e9;
+  box-shadow: 0 0 0 1px #28543f;
+}
+.care-rhythm:has(:focus-visible) {
+  outline: 3px solid #638361;
+  outline-offset: 4px;
+}
+.care-rhythm [role='radio'] {
+  height: 18px;
+  width: 18px;
+  margin-bottom: 12px;
+}
+.care-rhythm-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.care-rhythm > strong {
+  font-size: 22px;
+  letter-spacing: -0.035em;
+  line-height: 1.35;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.care-rhythm strong small {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
+  margin-left: 3px;
+  display: block;
+}
+.care-rhythm-saving {
+  margin-top: 9px;
+  font-size: 14px;
+  color: #4b6c44;
+}
+.home-care .care-deep {
+  padding: 18px 14px;
+  margin: 24px 0;
+  border: 1px solid #d8ded4;
+  border-radius: 9px;
+  cursor: pointer;
+  min-height: 90px;
+}
+.care-deep.selected {
+  background: #f3f6ee;
+  border-color: #76956b;
+}
+.home-care .care-deep [role='checkbox'] {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}
+.home-care .care-deep strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+.home-care .care-deep small {
+  font-size: 14px;
+  color: #586b5d;
+}
+.care-price-lines {
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 14px;
+  color: #536659;
+}
+.care-price-lines > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.care-price-lines dd {
+  margin: 0;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.care-price-lines .care-saving {
+  color: #315f3c;
+}
+.home-care .estimate-total {
+  border-top: 1px solid #d8ded4;
+  padding-top: 22px;
+  margin: 22px 0;
+  gap: 15px;
+}
+.home-care .estimate-total > span {
+  font-size: 16px;
+}
+.home-care .estimate-total small {
+  font-size: 14px;
+  color: #586b5d;
+  margin-top: 4px;
+}
+.home-care .estimate-total strong {
+  font-size: clamp(36px, 3.5vw, 48px);
+  white-space: nowrap;
+  letter-spacing: -0.035em;
+}
+.home-care .full-button,
+.care-preview .full-button {
+  min-height: 52px;
+  font-size: 16px;
+}
+.care-card-note {
+  font-size: 14px;
+  text-align: center;
+  color: #586b5d;
+  margin-top: 12px;
+}
+.home-care .care-faq {
+  max-width: 1440px;
+}
+.home-care .faq-answer {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.care-faq-intro {
+  color: #586b5d;
+  margin-top: 18px;
+}
+.care-preview {
+  width: 540px !important;
+  max-width: calc(100% - 32px) !important;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #fffdf9;
+  color: #203c32;
+  padding: 32px !important;
+  gap: 20px !important;
+  --primary: #28543f;
+  --muted-foreground: #586b5d;
+}
+.care-preview [data-slot='dialog-close'] {
+  width: 44px;
+  height: 44px;
+}
+.care-preview-mark {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-right: 22px;
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  color: #526e4f;
+}
+.care-preview-title {
+  font:
+    400 40px/1.05 Georgia,
+    serif !important;
+  letter-spacing: -0.04em;
+}
+.care-preview-title em {
+  color: #638361;
+}
+.care-preview-description {
+  font-size: 16px !important;
+  line-height: 1.7;
+}
+.care-preview-facts {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-top: 1px solid #d8ded4;
+  border-bottom: 1px solid #d8ded4;
+}
+.care-preview-facts span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+}
+.care-preview-includes > strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+.care-preview-includes ul {
+  margin-top: 12px;
+}
+.care-preview-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid #d8ded4;
+  padding-top: 18px;
+  align-items: center;
+}
+.care-preview-total > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+.care-preview-total small {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #586b5d;
+}
+.care-preview-total strong {
+  font:
+    400 44px/1 Georgia,
+    serif;
+  letter-spacing: -0.035em;
+}
+.care-preview-note {
+  text-align: center;
+  font-size: 14px;
+  color: #586b5d;
+}
+@media (max-width: 1050px) {
+  .home-care .care-estimate {
+    gap: 32px;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+  .home-care .estimate-card {
+    padding: 24px;
+  }
+  .care-section-intro {
+    gap: 35px;
+  }
+  .care-room-grid {
+    gap: 20px;
+  }
+  .care-room h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 760px) {
+  .home-care .care-hero {
+    padding-top: 16px;
+  }
+  .home-care .care-perks {
+    gap: 12px;
+  }
+  .home-care .care-services {
+    padding: 45px 6vw 55px;
+  }
+  .care-section-intro {
+    display: block;
+    margin-bottom: 28px;
+  }
+  .care-section-intro > p {
+    margin-top: 20px;
+    max-width: 440px;
+  }
+  .care-room-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .care-room {
+    padding-top: 20px;
+  }
+  .care-room h3 {
+    margin: 12px 0 8px;
+    font-size: 28px;
+  }
+  .care-room ul {
+    margin-top: 16px;
+  }
+  .home-care .care-estimate {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+    padding: 50px 6vw;
+  }
+  .care-steps {
+    gap: 18px;
+  }
+  .care-steps p {
+    max-width: none;
+  }
+  .home-care .care-estimate-intro > p {
+    max-width: none;
+  }
+  .home-care .estimate-total strong {
+    font-size: 40px;
+  }
+  .home-care .care-faq {
+    gap: 24px;
+  }
+  .care-preview {
+    padding: 24px !important;
+  }
+}
+@media (max-width: 420px) {
+  .home-care .care-nav {
+    gap: 12px;
+  }
+  .home-care .estimate-card {
+    padding: 20px 16px;
+  }
+  .home-care .estimate-card .form-two {
+    gap: 10px;
+  }
+  .home-care .demo-select {
+    padding-inline: 10px !important;
+  }
+  .care-rhythms {
+    grid-template-columns: 1fr;
+  }
+  .care-rhythm {
+    display: grid;
+    grid-template-columns: 20px 1fr auto;
+    gap: 0 12px;
+    align-items: center;
+    padding: 13px 14px;
+  }
+  .care-rhythm [role='radio'] {
+    margin: 0;
+    grid-row: 1 / 3;
+  }
+  .care-rhythm-label {
+    grid-column: 2;
+  }
+  .care-rhythm > strong {
+    grid-column: 3;
+    grid-row: 1 / 3;
+    margin: 0;
+    text-align: right;
+    font-size: 22px;
+  }
+  .care-rhythm strong small {
+    display: block;
+  }
+  .care-rhythm-saving {
+    grid-column: 2;
+    margin: 4px 0 0;
+  }
+  .home-care .estimate-total {
+    flex-wrap: wrap;
+  }
+  .care-preview {
+    padding: 22px 20px !important;
+  }
+  .care-preview-title {
+    font-size: 36px !important;
+  }
+}

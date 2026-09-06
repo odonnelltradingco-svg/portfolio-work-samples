@@ -1,0 +1,39 @@
+PIERCE ODONNELL
+Web Developer
+
+Studio: https://odonnellos.online/studio
+Live portfolio: https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site
+GitHub source: https://github.com/odonnelltradingco-svg/portfolio-work-samples
+Upwork profile: https://www.upwork.com/freelancers/~01fb4a3dd2fdc715be
+
+Independent web developer focused on responsive React and Next.js interfaces, HTML/CSS repairs and practical Python automation. My portfolio includes a live business application and original demonstrations with inspectable source and documented checks.
+
+TECHNICAL SKILLS
+Web: JavaScript, TypeScript, React, Next.js, HTML, CSS
+Data: Python, Pandas, NumPy, CSV processing, Excel
+Tools: Git, Supabase, API integration, software testing
+
+INDEPENDENT PRODUCT DEVELOPMENT
+Designed and developed O'Donnell OS, a business application connecting inventory, sales, customers, fulfillment and reporting. Created the Studio website for website builds, business systems and workflow automation. The public product demo uses sample data and needs no login.
+
+SELECTED PROJECTS
+Sunday Home
+Built a responsive cleaning-service website with home-size controls, visit-plan comparisons and an itemized estimate. Pricing checks cover all 120 supported combinations and invalid inputs.
+https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/home-care
+
+Python data cleanup and analysis
+Created a reproducible Pandas notebook for 243 fictional orders: 233 accepted and 10 retained for review. Delivered three figures, explicit cleanup decisions, tests and expected outputs.
+https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/fulfillment-eda.html
+
+HTML website repair
+Corrected three file references while preserving the page content and design. Five tests check the repair, including local HTTP behavior at root and subfolder paths.
+https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/site-repair.html
+
+Excel job tracker
+Created a five-sheet workbook with filters, status dropdowns, due dates and summary formulas. Retained all 18 original sample records, with separate active, archive and review sheets.
+https://pierce-portfolio-demos.odonnelltradingco.chatgpt.site/downloads/job-tracker.html
+
+DELIVERY APPROACH
+Agree the scope and acceptance criteria before starting. Deliver source files, relevant checks, concise change notes and setup instructions.
+
+Portfolio demonstrations use fictional brands and data. For Upwork projects, please contact and hire me through Upwork.

@@ -1,0 +1,309 @@
+.quote-app .demo-ribbon,
+.quote-app .eyebrow,
+.quote-app .quote-top {
+  font-size: 14px;
+}
+.quote-app .quote-help,
+.quote-app .feature-row strong,
+.quote-app .project-type strong,
+.quote-app .review-brief dl {
+  font-size: 16px;
+}
+.quote-app .feature-row small,
+.quote-app .feature-row b,
+.quote-app .project-type > span,
+.quote-app .field-hint,
+.quote-app .quote-bottom small {
+  font-size: 14px;
+}
+.quote-app :is(a, button, input, textarea):focus-visible {
+  outline: 3px solid #8278a5;
+  outline-offset: 4px;
+}
+.quote-app .quote-aside {
+  gap: 45px;
+}
+.quote-app .quote-aside > div > p:last-child {
+  font-size: 16px;
+}
+.quote-app .quote-aside-bottom > p {
+  font-size: 14px !important;
+}
+.quote-app .quote-progress {
+  margin: 28px 0 30px;
+}
+.quote-app .quote-progress > div:first-child {
+  font-size: 14px;
+}
+.quote-step-nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 14px 0 0;
+}
+.quote-step-nav button {
+  background: transparent;
+  border: 0;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #5f6076;
+  min-height: 40px;
+}
+.quote-step-nav button[aria-current='step'] {
+  color: #302d49;
+  font-weight: 650;
+}
+.quote-step-nav button:disabled {
+  opacity: 0.7;
+}
+.quote-app .project-types {
+  margin-bottom: 24px;
+}
+.quote-app .project-type {
+  min-height: 140px;
+}
+.quote-app .feature-row {
+  min-height: 60px;
+}
+.quote-app .feature-row [data-slot='checkbox'] {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+}
+.quote-app .quote-step h2 {
+  scroll-margin-top: 24px;
+}
+.quote-app .quote-bottom {
+  flex-wrap: wrap;
+}
+.quote-app .goal-input[aria-invalid='true'],
+.quote-app .input-control[aria-invalid='true'] {
+  border-color: #a82b3a;
+  outline-color: #a82b3a;
+}
+.quote-field-error {
+  color: #a82b3a;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.quote-helper-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0;
+}
+.quote-helper-row p {
+  font-size: 14px;
+  color: #666779;
+}
+.quote-helper-row button {
+  font-size: 14px;
+  min-height: 44px;
+}
+.quote-breakdown {
+  border: 1px solid #d9d9e4;
+  border-radius: 10px;
+  background: #fff;
+  padding: 19px 20px;
+  margin-top: 25px;
+}
+.quote-breakdown summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 25px;
+}
+.quote-breakdown summary:after {
+  content: '+';
+  font-size: 19px;
+  line-height: 1;
+}
+.quote-breakdown[open] summary:after {
+  content: '−';
+}
+.quote-breakdown dl,
+.quote-review-cost dl {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  font-size: 14px;
+}
+.quote-breakdown dl > div,
+.quote-review-cost dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.quote-breakdown dd,
+.quote-review-cost dd {
+  margin: 0;
+  white-space: nowrap;
+}
+.quote-breakdown p {
+  font-size: 14px;
+  color: #626376;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+.quote-review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+.quote-review-head h3 {
+  font-size: 18px;
+}
+.quote-review-head button {
+  font-size: 14px;
+  min-height: 40px;
+}
+.quote-app .review-brief h3 {
+  font-size: 22px;
+}
+.quote-app .review-brief > p {
+  font-size: 16px;
+  color: #5f6074;
+}
+.quote-app .review-brief dt {
+  color: #626376;
+}
+.quote-review-cost {
+  border-top: 1px solid #dedee6;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.quote-review-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-top: 20px;
+}
+.quote-review-total strong {
+  font-size: 25px;
+  letter-spacing: -0.04em;
+}
+.quote-review-total > span {
+  font-size: 14px;
+}
+.quote-success .quote-next {
+  margin-top: 8px;
+}
+.quote-app .quote-success > p:not(.eyebrow),
+.quote-app .summary-box p {
+  font-size: 16px;
+  color: #606276;
+}
+.quote-success .summary-box p {
+  font-size: 14px;
+}
+.quote-success-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.quote-success-actions > button {
+  min-height: 49px;
+}
+.quote-fineprint {
+  font-size: 14px !important;
+  line-height: 1.7;
+  margin-top: 24px !important;
+}
+.quote-summary-goal {
+  border-top: 1px solid #dedee6;
+  padding-top: 18px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1050px) {
+  .quote-app .quote-shell {
+    grid-template-columns: 31% 69%;
+  }
+  .quote-app .quote-aside h1 {
+    font-size: 3rem;
+  }
+  .quote-app .quote-aside {
+    padding: 35px 22px;
+  }
+  .quote-app .quote-main {
+    padding: 30px;
+  }
+}
+@media (max-width: 760px) {
+  .quote-app .quote-shell {
+    grid-template-columns: 1fr;
+  }
+  .quote-app .quote-main {
+    padding: 22px 6vw 38px;
+  }
+  .quote-app .quote-aside {
+    padding: 24px 6vw;
+  }
+  .quote-app .quote-progress {
+    margin: 0 0 24px;
+  }
+  .quote-app .quote-step h2 {
+    font-size: 31px;
+  }
+  .quote-app .project-types {
+    grid-template-columns: 1fr !important;
+  }
+  .quote-app .project-type {
+    min-height: 120px;
+    padding: 20px 44px 20px 62px;
+    justify-content: center;
+  }
+  .quote-app .project-type > svg {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    margin: 0;
+  }
+  .quote-app .project-type [role='radio'] {
+    top: 25px;
+    right: 17px;
+  }
+  .quote-app .feature-row {
+    align-items: flex-start;
+    padding: 8px 0;
+  }
+  .quote-app .feature-row [data-slot='checkbox'] {
+    margin-top: 4px;
+  }
+  .quote-app .feature-row small {
+    max-width: none;
+  }
+  .quote-app .quote-bottom {
+    margin-top: 28px;
+  }
+  .quote-step-nav {
+    gap: 9px;
+  }
+  .quote-helper-row {
+    align-items: flex-start;
+  }
+  .quote-helper-row > p {
+    max-width: 170px;
+  }
+  .quote-app .review-brief dl {
+    grid-template-columns: 1fr;
+  }
+  .quote-app .review-brief dd {
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  .quote-review-total {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
