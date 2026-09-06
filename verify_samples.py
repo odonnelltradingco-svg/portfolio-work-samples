@@ -9,6 +9,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--include-eda', action='store_true',
                         help='Also run the five Pandas analysis tests; install its requirements first.')
+    parser.add_argument('--include-pdf', action='store_true',
+                        help='Also run the ten CSV-to-PDF tests; install its requirements first.')
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     suites = [('csv-cleanup', 'test_clean_orders.py'),
@@ -16,6 +18,8 @@ def main() -> int:
               ('site-repair', 'test_repair.py')]
     if args.include_eda:
         suites.append(('fulfillment-eda', 'test_analysis.py'))
+    if args.include_pdf:
+        suites.append(('csv-to-pdf', 'test_report_orders.py'))
     failed = []
     for folder, filename in suites:
         print(f'\nRunning {folder}', flush=True)
@@ -28,6 +32,8 @@ def main() -> int:
     print(f'\nAll {len(suites)} sample suites passed.')
     if not args.include_eda:
         print('EDA was not run. Use --include-eda after installing its requirements.')
+    if not args.include_pdf:
+        print('CSV-to-PDF was not run. Use --include-pdf after installing its requirements.')
     return 0
 
 

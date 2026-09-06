@@ -1,0 +1,4 @@
+order_id,item,quantity,unit_price
+ DEMO-001 ,Notebook,2,4.50
+DEMO-002,Desk organiser,1,12.95
+DEMO-003,Pen set,3,3.50

@@ -2,7 +2,7 @@
 
 ## Automatic checks
 
-The [public workflow](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) runs on each push to `main` and each pull request. Open a completed run for its exact commit, result and logs. Python 3.10 runs the 19 standard-library tests; Python 3.12 runs all 24 tests and re-executes the complete EDA notebook in a fresh kernel. Both jobs check that tracked sample files remain unchanged. The notebook's newly generated outputs stay in the temporary runner workspace.
+The [public workflow](https://github.com/odonnelltradingco-svg/portfolio-work-samples/actions/workflows/verify-samples.yml) runs on each push to `main` and each pull request. Open a completed run for its exact commit, result and logs. Python 3.10 runs the 19 standard-library tests; Python 3.12 runs all 34 tests, generates the order PDF and re-executes the complete EDA notebook in a fresh kernel. Both jobs check that tracked sample files remain unchanged. Newly generated outputs stay in the temporary runner workspace.
 
 The React job installs the recorded dependencies with a frozen lockfile, runs 22 interface-logic tests, checks TypeScript and builds the routes. It also confirms tracked source files remain unchanged. These are code/build checks, not automated browser interaction or accessibility conformance tests.
 
@@ -18,12 +18,15 @@ Verified September 6, 2026 with Python 3.12.14 on Windows. This records the supp
 | Job tracker | 6 | Passed |
 | HTML repair | 5 | Passed |
 | Fulfillment EDA | 5 | Passed |
-| **Total** | **24** | **Passed** |
+| CSV-to-PDF | 10 | Passed |
+| **Total** | **34** | **Passed** |
 
-Run `python verify_samples.py --include-eda` from the repository root after installing the EDA requirements to reproduce the test run. Run without that flag for the 19 standard-library tests.
+Run `python verify_samples.py --include-eda --include-pdf` from the repository root after installing both optional folders' requirements to reproduce the test run. Run without either flag for the 19 standard-library tests; include EDA only for the earlier 24-test total.
 
 The suites check the supplied partitions, original values, exact money totals, duplicate handling and review rules. HTML checks also exercise a temporary case-sensitive HTTP fixture at a domain root and a subfolder. The job tracker workbook's earlier verification included all five rendered sheet layouts, saved formulas, status validation, count reconciliation and an edited-date scenario. These Python suites exercise its CSV cleanup logic; they do not open Microsoft Excel or prove compatibility with every Excel version.
 
 The original EDA notebook includes executed cell outputs and figures. See its README to re-execute it in a fresh kernel. The suite checks the analysis functions; running the suite alone does not rerender every chart or rerun the notebook.
+
+The CSV-to-PDF report was rendered and visually inspected locally. Its ten tests check exact line/report amounts, accepted CSV variations, rejected input, escaped text, multiple pages and file preservation. The portable output is a new report using the same original three-order CSV; it is separate from the earlier visual application attachment. Fonts use the standard PDF Helvetica family, with an explicit printable-ASCII input boundary. Linux CI verifies generation and extracted contents, not page appearance.
 
 The four Python/repair sample folders were copied from the portfolio's published downloads. The web-interface package records its separate published-site provenance in `web-interfaces/SOURCE-MAP.json`. Repeated notebook-run folders, Python caches, installed dependencies and local environments are excluded from the repository.

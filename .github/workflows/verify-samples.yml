@@ -41,9 +41,16 @@ jobs:
       - name: Install the recorded analysis dependencies
         if: ${{ matrix.analysis }}
         run: python -m pip install -r fulfillment-eda/requirements.txt
-      - name: Run all 24 checks
+      - name: Install the recorded PDF dependencies
         if: ${{ matrix.analysis }}
-        run: python verify_samples.py --include-eda
+        run: python -m pip install -r csv-to-pdf/requirements.txt
+      - name: Run all 34 Python checks
+        if: ${{ matrix.analysis }}
+        run: python verify_samples.py --include-eda --include-pdf
+      - name: Generate the sample order report
+        if: ${{ matrix.analysis }}
+        working-directory: csv-to-pdf
+        run: python report_orders.py --input sample-orders.csv --output rerun-report.pdf
       - name: Re-execute the complete notebook in a fresh kernel
         if: ${{ matrix.analysis }}
         working-directory: fulfillment-eda
