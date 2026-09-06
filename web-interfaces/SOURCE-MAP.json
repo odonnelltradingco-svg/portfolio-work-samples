@@ -30,10 +30,10 @@
     },
     {
       "path": "app/home-care/home-care.css",
-      "origin_sha256": "c10f5d4c2bfc800f0a5e9c1ccd9edb15acb0a7462a64ac275e55e7f96090ab96",
-      "bytes": 11619,
-      "origin_version": 18,
-      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+      "origin_sha256": "3c7c5d5000627b92e1fc12696dbd2cd294423cf5acaf6f5837715889f0200cab",
+      "bytes": 11679,
+      "origin_version": 23,
+      "origin_commit": "8c8e9770da48af0d62a0b4aa0a69f6fcd5427f6e"
     },
     {
       "path": "app/home-care/layout.tsx",
@@ -476,6 +476,14 @@
         "app/page.tsx"
       ],
       "change": "Product description and link now guide visitors through the verified seven-step sample-data purchase, inventory and simulated-sale preview."
+    },
+    {
+      "site_version": 23,
+      "site_commit": "8c8e9770da48af0d62a0b4aa0a69f6fcd5427f6e",
+      "files": [
+        "app/home-care/home-care.css"
+      ],
+      "change": "Cleaning preview and return buttons allow multiline labels and automatic height for narrow widths or enlarged text; existing 52px minimum retained."
     }
   ]
 }

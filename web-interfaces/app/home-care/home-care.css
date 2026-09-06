@@ -340,8 +340,11 @@
 }
 .home-care .full-button,
 .care-preview .full-button {
+  height: auto;
   min-height: 52px;
   font-size: 16px;
+  line-height: 1.45;
+  white-space: normal;
 }
 .care-card-note {
   font-size: 14px;
