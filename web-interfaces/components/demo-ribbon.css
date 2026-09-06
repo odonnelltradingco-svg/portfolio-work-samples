@@ -1,0 +1,23 @@
+div.demo-ribbon {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  padding-block: 4px;
+  font-size: 14px;
+}
+div.demo-ribbon > span {
+  flex: 1 1 240px;
+  max-width: none;
+  padding-block: 8px;
+}
+.demo-ribbon-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 20px;
+}
+.demo-ribbon-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}

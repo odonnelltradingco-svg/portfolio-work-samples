@@ -88,6 +88,8 @@ jobs:
         run: pnpm test
       - name: Check TypeScript
         run: pnpm typecheck
+      - name: Check English and French labels and price presentation
+        run: pnpm check:languages
       - name: Build the working routes
         run: pnpm build
       - name: Confirm the supplied files remain unchanged

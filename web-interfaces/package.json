@@ -13,7 +13,8 @@
     "start": "vinext start",
     "test": "node --experimental-strip-types --test tests/clean-estimate.test.mjs tests/portfolio-flows.test.mjs tests/order-cleanup.test.mjs",
     "typecheck": "tsc --noEmit",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "check:languages": "node --experimental-strip-types scripts/check-cleaning-languages.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

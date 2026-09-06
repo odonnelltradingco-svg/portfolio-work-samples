@@ -1,7 +1,7 @@
 {
   "origin": "Public portfolio source snapshot, Site version 15",
   "origin_commit": "221df0c52f62ea40d9a416711eeff70fbd6da143",
-  "notes": "Application, tests and public assets copied from the published portfolio. Code formatting may be normalized; local build configuration omits account-specific hosting. Origin hashes record the source before formatting.",
+  "notes": "Base application snapshot is Site v15. Per-file origin_version/origin_commit and updates identify later synchronized changes. Hashes record source before formatting. Independent local build settings omit account-specific hosting.",
   "files": [
     {
       "path": ".oxfmtrc.json",
@@ -30,8 +30,10 @@
     },
     {
       "path": "app/home-care/home-care.css",
-      "origin_sha256": "53d4ba30607656deb654b638c58fc21ace4af3e2ebf46ba91a8fab160c820dbf",
-      "bytes": 9127
+      "origin_sha256": "c10f5d4c2bfc800f0a5e9c1ccd9edb15acb0a7462a64ac275e55e7f96090ab96",
+      "bytes": 11619,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "app/home-care/layout.tsx",
@@ -40,8 +42,10 @@
     },
     {
       "path": "app/home-care/page.tsx",
-      "origin_sha256": "d7da55b59dc79378b4ee6a90d7ca6d5019d184f235214f60ec1a0bc40ca3be90",
-      "bytes": 12740
+      "origin_sha256": "18d1d39ffc4e52eef6fa596708812bc309d97814f11abdc920d1bde37a94e078",
+      "bytes": 16172,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "app/insights/insights.css",
@@ -65,8 +69,10 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "146183ed6622376e0bd401d65ad47cb436b47a414ae8ba6ff8e52a2c25c15141",
-      "bytes": 16921
+      "origin_sha256": "e5c5777c233eb13821c6951f133a60acdf82e75b628aa0ba6618bcf1232a94ee",
+      "bytes": 17493,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "app/portfolio.css",
@@ -90,8 +96,10 @@
     },
     {
       "path": "components/demo-shared.tsx",
-      "origin_sha256": "6b82f4829e1fb19c73c5862d079ffbb08dfcd1258d22262a4e0dc1b258d5031d",
-      "bytes": 1337
+      "origin_sha256": "413af355b18771a73e7c97fd90c31a75654501eda24c5d03d2741b0fe488d745",
+      "bytes": 1891,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "components/export-preview.css",
@@ -125,8 +133,10 @@
     },
     {
       "path": "components/ui/dialog.tsx",
-      "origin_sha256": "8bc85def62538b4e62e8530c6b0ba167a192c38519c05f104bf6e10de73b811f",
-      "bytes": 4087
+      "origin_sha256": "48fa1053f84d064f8ad75c7d4ba7d106cfc31d514bccfd7b05ef1463e8d2f819",
+      "bytes": 4141,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
     },
     {
       "path": "components/ui/input.tsx",
@@ -362,6 +372,52 @@
       "path": "samples/csv-cleanup/expected-results/cleaned-orders.csv",
       "origin_sha256": "4d53d0f4b03c06db1dbad79c79b69048dbef03666239e1cbdb6f0e96049367fc",
       "bytes": 398
+    },
+    {
+      "path": "lib/home-care-copy.ts",
+      "origin_sha256": "010e3185b9d66f94558ea47caffd59de77ac6793fe88451d5e976748fceae706",
+      "bytes": 13189,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    },
+    {
+      "path": "components/demo-ribbon.css",
+      "origin_sha256": "74c3492bf5bd57a2094959e4da0f332ff9cb062069a7ed13db470defdb478958",
+      "bytes": 394,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    },
+    {
+      "path": "public/downloads/csv-to-pdf-report.pdf",
+      "origin_sha256": "aefec2ae528f0890b63cd2e62e3855f1bb343a86ab0031c9fa489f9d9f72b4ad",
+      "bytes": 2966,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    },
+    {
+      "path": "public/downloads/csv-to-pdf-sample.zip",
+      "origin_sha256": "d5b40f4947ba58c0f4c6effb008914add77de7653ebfafd34fcfea20c6fcd286",
+      "bytes": 10398,
+      "origin_version": 18,
+      "origin_commit": "4216621b033059226f49877c909a6f566f03ea52"
+    }
+  ],
+  "updates": [
+    {
+      "site_version": 18,
+      "site_commit": "4216621b033059226f49877c909a6f566f03ea52",
+      "files": [
+        "app/home-care/page.tsx",
+        "app/home-care/home-care.css",
+        "lib/home-care-copy.ts",
+        "components/demo-shared.tsx",
+        "components/demo-ribbon.css",
+        "components/ui/dialog.tsx",
+        "app/page.tsx",
+        "public/downloads/csv-to-pdf-report.pdf",
+        "public/downloads/csv-to-pdf-sample.zip"
+      ],
+      "change": "Complete English/French cleaning flow, localized shared controls and source navigation; current download index and portable CSV-to-PDF downloads."
     }
   ]
 }

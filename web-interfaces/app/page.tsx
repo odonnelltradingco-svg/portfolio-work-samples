@@ -24,7 +24,7 @@ const examples = [
     features: [
       'Home-size and visit-plan comparison',
       'Exact savings and itemized service preview',
-      'Responsive layout and clear service scope',
+      'English/French interface with retained choices',
     ],
     try: 'Add a deeper clean and compare weekly with one-time pricing.',
     cta: 'Explore the website',
@@ -105,11 +105,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section
-        className="work-walkthrough"
-        id="walkthrough"
-        aria-labelledby="walkthrough-title"
-      >
+      <section className="work-walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
         <div className="work-walkthrough-copy">
           <p className="eyebrow">A QUICK LOOK AT THE WORK</p>
           <h2 id="walkthrough-title">Six views. 36 seconds.</h2>
@@ -138,43 +134,18 @@ export default function Home() {
             aria-describedby="walkthrough-summary"
           >
             <source src="/downloads/selected-work.mp4" type="video/mp4" />
-            <track
-              src="/downloads/selected-work.vtt"
-              kind="captions"
-              srcLang="en"
-              label="On-screen text"
-            />
-            <a href="/downloads/selected-work.mp4" download>
-              Download the portfolio video.
-            </a>
+            <track src="/downloads/selected-work.vtt" kind="captions" srcLang="en" label="On-screen text" />
+            <a href="/downloads/selected-work.mp4" download>Download the portfolio video.</a>
           </video>
           <details id="walkthrough-summary">
             <summary>Read the video summary</summary>
             <ol>
-              <li>
-                <strong>O’Donnell OS:</strong> my original live product, shown
-                with sample data.
-              </li>
-              <li>
-                <strong>Sunday Home:</strong> a service website with a guided
-                estimate and a clear next step.
-              </li>
-              <li>
-                <strong>Fieldnote:</strong> sales filters, individual records
-                and exports.
-              </li>
-              <li>
-                <strong>Scope Studio:</strong> a guided form and downloadable
-                project outline.
-              </li>
-              <li>
-                <strong>Orderly:</strong> CSV review that preserves source
-                values and explains exceptions.
-              </li>
-              <li>
-                <strong>O’Donnell OS Studio:</strong> my studio website. Message
-                me on Upwork with your goal, site or file, and deadline.
-              </li>
+              <li><strong>O’Donnell OS:</strong> my original live product, shown with sample data.</li>
+              <li><strong>Sunday Home:</strong> a service website with a guided estimate and a clear next step.</li>
+              <li><strong>Fieldnote:</strong> sales filters, individual records and exports.</li>
+              <li><strong>Scope Studio:</strong> a guided form and downloadable project outline.</li>
+              <li><strong>Orderly:</strong> CSV review that preserves source values and explains exceptions.</li>
+              <li><strong>O’Donnell OS Studio:</strong> my studio website. Message me on Upwork with your goal, site or file, and deadline.</li>
             </ol>
           </details>
         </div>
@@ -344,8 +315,7 @@ export default function Home() {
         <div className="work-intro-rule">
           <h2 id="downloads-title">Take a closer look.</h2>
           <p>
-            Keep a concise work sample, inspect the source, or run the examples
-            yourself.
+            Keep a concise work sample, inspect the source, or run the examples yourself.
           </p>
         </div>
         <div className="work-download-grid">
@@ -369,8 +339,7 @@ export default function Home() {
               and delivery approach.
             </p>
             <strong>
-              Download the visual resume{' '}
-              <ArrowUpRight size={18} aria-hidden="true" />
+              Download the visual resume <ArrowUpRight size={18} aria-hidden="true" />
             </strong>
           </a>
           <a href="/downloads/csv-cleanup-sample.zip" download>
@@ -383,6 +352,18 @@ export default function Home() {
             </p>
             <strong>
               Download the sample <ArrowUpRight size={18} aria-hidden="true" />
+            </strong>
+          </a>
+          <a href="/downloads/csv-to-pdf-sample.zip" download>
+            <span>CSV TO PDF · RUNNABLE PYTHON SAMPLE</span>
+            <h3>Clear order reports. Calculations you can follow.</h3>
+            <p>
+              Three fictional orders, a generated PDF and the complete source.
+              Validated input, exact totals, page handling and ten behavior checks.
+            </p>
+            <strong>
+              Download the report and source{' '}
+              <ArrowUpRight size={18} aria-hidden="true" />
             </strong>
           </a>
           <Link href="/downloads/fulfillment-eda.html">
@@ -425,10 +406,7 @@ export default function Home() {
             </strong>
           </Link>
         </div>
-        <nav
-          className="work-resume-formats"
-          aria-label="Additional resume formats"
-        >
+        <nav className="work-resume-formats" aria-label="Additional resume formats">
           <span>Prefer a quick summary?</span>
           <a href="/downloads/pierce-odonnell-professional-resume.pdf" download>
             One-page resume (PDF)
@@ -443,7 +421,7 @@ export default function Home() {
           className="work-source-browse"
           href="https://github.com/odonnelltradingco-svg/portfolio-work-samples"
         >
-          Browse four source examples on GitHub
+          Browse source and automatic checks on GitHub
           <ArrowUpRight size={18} aria-hidden="true" />
         </a>
       </section>
