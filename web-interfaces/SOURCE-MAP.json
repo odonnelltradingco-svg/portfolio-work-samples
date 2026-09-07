@@ -69,10 +69,10 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "20527d63a68575b9bd3c03b695f05a3bf669eddb937ba181064fa10e52262ca2",
-      "bytes": 19753,
-      "origin_version": 24,
-      "origin_commit": "d705e6c8f2f4bb34842af4a96b8c4de1f27e5b09"
+      "origin_sha256": "43ccb8973ab6d1641e2bdd2062655b47476b244e7353ef4fbccfa1f9028382c5",
+      "bytes": 19767,
+      "origin_version": 25,
+      "origin_commit": "7f8d67a8d5cd9272591d3a0d535f6d0cda0b87e4"
     },
     {
       "path": "app/portfolio.css",
@@ -234,10 +234,10 @@
     },
     {
       "path": "public/downloads/csv-to-pdf-sample.zip",
-      "origin_sha256": "f53549fa18c1d999a30d82c54bd61c3be19b363b981965d9597729e6003534d5",
-      "bytes": 19250,
-      "origin_version": 19,
-      "origin_commit": "19587c7112642ca2f348cb1f74b5f4e162a6e126"
+      "origin_sha256": "df9029a48613eabb23377fc7609afe410b12535203fc9a12d1dc9998e8e18c90",
+      "bytes": 22394,
+      "origin_version": 25,
+      "origin_commit": "7f8d67a8d5cd9272591d3a0d535f6d0cda0b87e4"
     },
     {
       "path": "public/downloads/fulfillment-eda.html",
@@ -420,6 +420,13 @@
       "bytes": 5201,
       "origin_version": 20,
       "origin_commit": "eee2a738ef63e765d8361c81312b14fd4e0931b9"
+    },
+    {
+      "path": "public/downloads/csv-to-pdf-accented-report.pdf",
+      "origin_sha256": "37f45dd73a3d801addcd0555e020e75205dc2a3a78b8a331a0f7bdff59f81b6e",
+      "bytes": 3013,
+      "origin_version": 25,
+      "origin_commit": "7f8d67a8d5cd9272591d3a0d535f6d0cda0b87e4"
     }
   ],
   "updates": [
@@ -493,6 +500,16 @@
         "app/portfolio.css"
       ],
       "change": "Portfolio contact section links to the published LinkedIn Services page alongside Upwork, with wrapping buttons and a header shortcut; existing Upwork channel-specific footer retained."
+    },
+    {
+      "site_version": 25,
+      "site_commit": "7f8d67a8d5cd9272591d3a0d535f6d0cda0b87e4",
+      "files": [
+        "app/page.tsx",
+        "public/downloads/csv-to-pdf-sample.zip",
+        "public/downloads/csv-to-pdf-accented-report.pdf"
+      ],
+      "change": "CSV-to-PDF package preserves supported Western European accents and punctuation, adds a reproducible accented-text sample, and rejects unsupported characters before output. Original ASCII sample remains unchanged."
     }
   ]
 }

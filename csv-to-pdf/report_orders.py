@@ -21,6 +21,17 @@ MAX_BYTES = 5_000_000
 CENT = Decimal('0.01')
 
 
+def supports_report_text(value: str) -> bool:
+    """Accept printable text representable by the built-in WinAnsi PDF fonts."""
+    if not value.isprintable():
+        return False
+    try:
+        value.encode('cp1252', errors='strict')
+    except UnicodeEncodeError:
+        return False
+    return True
+
+
 class InputError(ValueError):
     """Expected input validation error, without echoing raw records."""
 
@@ -52,8 +63,8 @@ def clean_rows(text: str) -> list[Order]:
             row = dict(zip(headers, (v.strip() for v in record)))
             for field, limit in [('order_id', 64), ('item', 160)]:
                 value = row[field]
-                if not value or len(value) > limit or any(ord(c) < 32 or ord(c) > 126 for c in value):
-                    raise InputError(f'Line {line}: {field} must be 1-{limit} printable ASCII characters.')
+                if not value or len(value) > limit or not supports_report_text(value):
+                    raise InputError(f'Line {line}: {field} must be 1-{limit} printable characters supported by the report font (WinAnsi).')
             if row['order_id'] in seen:
                 raise InputError(f'Line {line}: duplicate order ID after whitespace cleanup.')
             if not re.fullmatch(r'[0-9]{1,7}', row['quantity']):

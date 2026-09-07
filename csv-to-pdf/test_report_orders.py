@@ -54,9 +54,12 @@ class ReportTests(unittest.TestCase):
         for price in ['NaN', 'Infinity', '-1', '1e2', '1000000001', '1.1234567', '']:
             with self.subTest(price=price), self.assertRaises(InputError):
                 clean_rows(HEADER + f'A,One,1,{price}\n')
-        for item in ['', 'x' * 161, 'Cafe\u00e9', 'private\tvalue']:
+        for item in ['', 'x' * 161, '\u4e66\u672c', 'Cafe\u0301', 'private\tvalue', 'bad\x7fvalue', 'hidden\u202evalue', '\U0001f600']:
             with self.subTest(item=item), self.assertRaises(InputError):
                 clean_rows(HEADER + f'A,{item},1,2\n')
+        for order_id in ['\u4e66-1', 'ID\x00ONE', 'ID\u200b1']:
+            with self.subTest(order_id=order_id), self.assertRaises(InputError):
+                clean_rows(HEADER + f'{order_id},One,1,2\n')
 
     def test_pdf_has_one_page_exact_amounts_and_escaped_text(self):
         rows = clean_rows(HEADER + 'A,<b>Desk & pen</b>,2,4.50\n')
@@ -65,14 +68,24 @@ class ReportTests(unittest.TestCase):
         text = pdf.pages[0].extract_text()
         for expected in ['<b>Desk & pen</b>', 'GBP 9.00', 'Page 1', 'ALL ORDERS ARE FICTIONAL']:
             self.assertIn(expected, text)
+        localized = clean_rows((ROOT / 'sample-accented-orders.csv').read_text(encoding='utf-8'))
+        localized_pdf = PdfReader(BytesIO(render_report(localized)))
+        self.assertEqual(len(localized_pdf.pages), 1)
+        localized_text = localized_pdf.pages[0].extract_text()
+        for order in localized:
+            self.assertIn(order.order_id, localized_text)
+            self.assertIn(order.item, localized_text)
+        self.assertIn('GBP 32.45', localized_text)
+        self.assertNotIn('\ufffd', localized_text)
 
     def test_pagination_retains_last_order_and_repeated_headings(self):
-        source = HEADER + ''.join(f'ORDER-{i:04},Long fictional item with a clear description {i},1,0.25\n' for i in range(1, 121))
+        source = HEADER + ''.join(f'ORDER-{i:04},Long fictional caf\u00e9 item with a clear description {i},1,0.25\n' for i in range(1, 121))
         pages = PdfReader(BytesIO(render_report(clean_rows(source)))).pages
         self.assertGreater(len(pages), 1)
         extracted = [p.extract_text() for p in pages]
         self.assertIn('ORDER-0120', '\n'.join(extracted))
         self.assertIn('GBP 30.00', '\n'.join(extracted))
+        self.assertIn('caf\u00e9', '\n'.join(extracted))
         for index, text in enumerate(extracted, 1):
             self.assertIn(f'Page {index}', text)
             if 'ORDER-00' in text or 'ORDER-01' in text:
@@ -98,6 +111,10 @@ class ReportTests(unittest.TestCase):
             invalid.write_text(HEADER + 'A,Missing price,1,\n', encoding='utf-8')
             missing = root / 'must-not-exist.pdf'
             with self.assertRaises(InputError):
+                convert(invalid, missing)
+            self.assertFalse(missing.exists())
+            invalid.write_text(HEADER + 'A,\u4e66\u672c,1,2\n', encoding='utf-8')
+            with self.assertRaisesRegex(InputError, 'report font'):
                 convert(invalid, missing)
             self.assertFalse(missing.exists())
 

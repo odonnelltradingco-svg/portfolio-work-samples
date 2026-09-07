@@ -47,10 +47,12 @@ jobs:
       - name: Run all 46 Python checks
         if: ${{ matrix.analysis }}
         run: python verify_samples.py --include-eda --include-pdf
-      - name: Generate the sample order report
+      - name: Generate the original and accented-text sample reports
         if: ${{ matrix.analysis }}
         working-directory: csv-to-pdf
-        run: python report_orders.py --input sample-orders.csv --output rerun-report.pdf
+        run: |
+          python report_orders.py --input sample-orders.csv --output rerun-report.pdf
+          python report_orders.py --input sample-accented-orders.csv --output rerun-accented-report.pdf
       - name: Re-execute the complete notebook in a fresh kernel
         if: ${{ matrix.analysis }}
         working-directory: fulfillment-eda

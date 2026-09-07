@@ -84,7 +84,10 @@ export default function Home() {
         <Link href="/" className="wordmark">
           PO<span> / </span>Selected work
         </Link>
-        <a className="text-link" href="#contact-title">
+        <a
+          className="text-link"
+          href="#contact-title"
+        >
           Discuss a project ↓
         </a>
       </header>
@@ -421,7 +424,7 @@ export default function Home() {
             <span>CSV TO PDF · RUNNABLE PYTHON SAMPLE</span>
             <h3>Clear order reports. Calculations you can follow.</h3>
             <p>
-              Three fictional orders, a generated PDF and the complete source.
+              Fictional order reports with preserved accented names and the complete source.
               Includes a repeatable folder workflow, file history, duplicate
               handling and readable errors, with ten conversion and twelve
               workflow checks.
