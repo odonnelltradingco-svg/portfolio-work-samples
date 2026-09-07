@@ -428,6 +428,44 @@
 .work-contact-actions svg {
   flex-shrink: 0;
 }
+.work-starter-offers {
+  margin: 23px 0 18px;
+  max-width: 680px;
+}
+.work-starter-offers > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  padding: 17px 0;
+  border-top: 1px solid #d8e0d9;
+}
+.work-starter-offers strong,
+.work-starter-offers span {
+  display: block;
+}
+.work-starter-offers strong {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.work-starter-offers span {
+  margin-top: 4px;
+  color: #586e62;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.work-starter-offers dd {
+  margin: 0;
+  color: #265e4b;
+  font-size: 24px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.work-contact .work-offer-boundaries {
+  font-size: 14px;
+}
+.work-contact .work-offer-intake {
+  margin-top: 14px;
+}
 .portfolio-work .portfolio-footer {
   margin-top: 0;
   font-size: 14px;

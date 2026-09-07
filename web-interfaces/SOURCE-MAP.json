@@ -69,17 +69,17 @@
     },
     {
       "path": "app/page.tsx",
-      "origin_sha256": "43ccb8973ab6d1641e2bdd2062655b47476b244e7353ef4fbccfa1f9028382c5",
-      "bytes": 19767,
-      "origin_version": 25,
-      "origin_commit": "7f8d67a8d5cd9272591d3a0d535f6d0cda0b87e4"
+      "origin_sha256": "8f0e5c7d6ecc0daa8ba8b3872c70740dd433bd5e73111d33b206d1d2b151e40e",
+      "bytes": 21095,
+      "origin_version": 26,
+      "origin_commit": "555162bc59a6d3bd986ef8e8fe2ee81c19b12359"
     },
     {
       "path": "app/portfolio.css",
-      "origin_sha256": "e043f0a95c36f9dc34a8766c492aed0977f4bf482640f8577dd9dfd0a5655e07",
-      "bytes": 13228,
-      "origin_version": 24,
-      "origin_commit": "d705e6c8f2f4bb34842af4a96b8c4de1f27e5b09"
+      "origin_sha256": "6060104af734a0f54dfcbf27faaf2aeea155839e4a438101bdb3b6e61db3584c",
+      "bytes": 13945,
+      "origin_version": 26,
+      "origin_commit": "555162bc59a6d3bd986ef8e8fe2ee81c19b12359"
     },
     {
       "path": "app/project-quote/layout.tsx",
@@ -510,6 +510,15 @@
         "public/downloads/csv-to-pdf-accented-report.pdf"
       ],
       "change": "CSV-to-PDF package preserves supported Western European accents and punctuation, adds a reproducible accented-text sample, and rejects unsupported characters before output. Original ASCII sample remains unchanged."
+    },
+    {
+      "site_version": 26,
+      "site_commit": "555162bc59a6d3bd986ef8e8fe2ee81c19b12359",
+      "files": [
+        "app/page.tsx",
+        "app/portfolio.css"
+      ],
+      "change": "Existing introductory direct-client offers are visible beside portfolio inquiry links: one HTML reference10USD, one CSV up to200rows/10columns25USD, or three-section React adaptation99USD. One revision, scope agreement, separate extras and existing proposal terms are explicit."
     }
   ]
 }

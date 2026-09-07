@@ -84,10 +84,7 @@ export default function Home() {
         <Link href="/" className="wordmark">
           PO<span> / </span>Selected work
         </Link>
-        <a
-          className="text-link"
-          href="#contact-title"
-        >
+        <a className="text-link" href="#contact-title">
           Discuss a project ↓
         </a>
       </header>
@@ -424,10 +421,10 @@ export default function Home() {
             <span>CSV TO PDF · RUNNABLE PYTHON SAMPLE</span>
             <h3>Clear order reports. Calculations you can follow.</h3>
             <p>
-              Fictional order reports with preserved accented names and the complete source.
-              Includes a repeatable folder workflow, file history, duplicate
-              handling and readable errors, with ten conversion and twelve
-              workflow checks.
+              Fictional order reports with preserved accented names and the
+              complete source. Includes a repeatable folder workflow, file
+              history, duplicate handling and readable errors, with ten
+              conversion and twelve workflow checks.
             </p>
             <strong>
               Download the report and source{' '}
@@ -498,11 +495,50 @@ export default function Home() {
       </section>
       <section className="work-contact" aria-labelledby="contact-title">
         <div>
-          <h2 id="contact-title">Have a page or workflow to improve?</h2>
+          <h2 id="contact-title">Start with one small project.</h2>
           <p>
-            Share your goal, existing website or file, and preferred deadline.
-            We can agree what is included, the price and delivery before work
-            starts.
+            Introductory offers for new direct clients, priced in US dollars.
+            Each includes one revision. We agree the scope and delivery before
+            work starts.
+          </p>
+          <dl
+            className="work-starter-offers"
+            aria-label="Introductory project prices"
+          >
+            <div>
+              <dt>
+                <strong>One HTML reference repair</strong>
+                <span>
+                  Fix one broken image or link on one static HTML page.
+                </span>
+              </dt>
+              <dd>$10</dd>
+            </div>
+            <div>
+              <dt>
+                <strong>One product CSV cleanup</strong>
+                <span>
+                  Up to 200 rows and 10 columns, with a separate review report.
+                </span>
+              </dt>
+              <dd>$25</dd>
+            </div>
+            <div>
+              <dt>
+                <strong>A three-section React landing page</strong>
+                <span>
+                  Adapt my existing design using your supplied text and images.
+                </span>
+              </dt>
+              <dd>$99</dd>
+            </div>
+          </dl>
+          <p className="work-offer-boundaries">
+            Hosting, domains, extra pages, custom forms and booking systems are
+            separate. Existing proposal and contract prices still apply.
+          </p>
+          <p className="work-offer-intake">
+            Send your goal, existing website or file, and preferred deadline.
           </p>
         </div>
         <div className="work-contact-actions">
